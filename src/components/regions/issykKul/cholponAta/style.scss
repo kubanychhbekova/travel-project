@@ -1,0 +1,38 @@
+#cholpon{
+  padding: 75px 0;
+  .cholpon{
+    &--first {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      gap: 36px;
+      position: relative;
+
+
+      img:nth-child(2) {
+        position: absolute;
+        bottom: 17px;
+        left: 25px;
+      }
+
+      &__title {
+        h1 {
+          @include h1;
+          margin-top: -20px;
+
+        }
+
+        p {
+          color: #242424;
+          font-family: Frank Ruhl Libre;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 140%;
+          letter-spacing: 1.2px;
+          width: 559px;
+        }
+      }
+    }
+  }
+}

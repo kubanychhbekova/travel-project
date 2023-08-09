@@ -2,7 +2,8 @@ import './App.scss';
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
 import {Route, Routes} from "react-router-dom";
-import IssytKyl from "./components/regions/issytKyl";
+import IssytKyl from "./components/regions/issykKul/issytKyl";
+import CholponAta from "./components/regions/issykKul/cholponAta/cholponAta";
 
 function App() {
     return (
@@ -10,6 +11,7 @@ function App() {
             <Header/>
             <Routes>
                 <Route path={"/issykKul"} element={<IssytKyl/>}/>
+                <Route path={"/issykKul/cholponAta"} element={<CholponAta/>}/>
             </Routes>
             <Footer/>
         </div>
