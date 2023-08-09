@@ -1,6 +1,8 @@
-import React from 'react';
+import React, {useState} from 'react';
+import {NavLink} from "react-router-dom";
 
 const Header = () => {
+    const [modal, setModal] = useState(false)
     return (
         <div id="header">
             <div className="container">
@@ -8,11 +10,25 @@ const Header = () => {
                     <div className="header--logo"></div>
                     <div className="header--center">
                         <h4>Home</h4>
-                        <h4>Regions</h4>
+                        <h4 onClick={() => {
+                            setModal(!modal)
+                        }}>Regions</h4>
                         <h4>Culture</h4>
                         <h4>Gallery</h4>
                         <h4>Routes</h4>
+                    </div>
 
+                    <div className="header--modal"
+                    style={{
+                        display:modal ? "block" : "none"
+                    }}>
+                        <h2>Chui</h2>
+                        <h2>Talas</h2>
+                      <NavLink to={"/issykKul"}>  <h2>Issyk-Kul</h2></NavLink>
+                        <h2>Naryn</h2>
+                        <h2>Jalal-Abad</h2>
+                        <h2>Osh</h2>
+                        <h2>Batken</h2>
                     </div>
                     <div className="header--right">
                         <select name="language" id="">
