@@ -19,12 +19,14 @@ const Header = () => {
                     </div>
 
                     <div className="header--modal"
+                         onClick={()=>{setModal(!modal)}}
                     style={{
                         display:modal ? "block" : "none"
                     }}>
                         <h2>Chui</h2>
                         <h2>Talas</h2>
-                      <NavLink to={"/issykKul"}>  <h2>Issyk-Kul</h2></NavLink>
+                      <NavLink to={"/issykKul"}>
+                          <h2>Issyk-Kul</h2></NavLink>
                         <h2>Naryn</h2>
                         <h2>Jalal-Abad</h2>
                         <h2>Osh</h2>
