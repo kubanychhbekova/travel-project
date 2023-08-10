@@ -16,13 +16,15 @@ z-index: 5;
   .header {
     display: flex;
     align-items: center;
-    padding: 34px 0;
 
+position: relative;
     &--center {
       display: flex;
       align-items: center;
       gap: 50px;
-
+position: absolute;
+      right: 385px;
+      top: 33px;
       h4 {
         @include color;
         font-family: Frank Ruhl Libre;
@@ -67,12 +69,14 @@ z-index: 5;
 
     &--right {
       display: inherit;
-      gap: 51px;
-
+      gap: 31px;
+position: absolute;
+      right: 0;
+      top: 27px;
       select {
         border-radius: 8px;
         @include border;
-        padding: 8px 32px;
+        padding: 8px 11px;
         background: transparent;
         color: var(--h-1, #004A60);
         font-family: Frank Ruhl Libre;

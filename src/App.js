@@ -9,9 +9,9 @@ import CholponAta from "./components/regions/issykKul/cholponAta/cholponAta";
 function App() {
     return (
         <div className="App">
-            <Hero/>
             <Header/>
             <Routes>
+                <Route path={"/"} element={<Hero/>}/>
                 <Route path={"/issykKul"} element={<IssytKyl/>}/>
                 <Route path={"/issykKul/cholponAta"} element={<CholponAta/>}/>
             </Routes>

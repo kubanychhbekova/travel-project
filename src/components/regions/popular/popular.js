@@ -5,176 +5,176 @@ import {FaArrowRightLong} from "react-icons/fa6";
 import {useNavigate} from "react-router-dom";
 
 const Popular = () => {
-    const navigate=useNavigate()
+    const navigate = useNavigate()
     return (
-            <>
-                <div className="popular--card">
-                    <img src={balyk} alt=""/>
-                    <div className="popular--card__bottom">
-                        <h2>Cholpon-Ata</h2>
-                        <div className="popular--card__bottom--center">
-                            <h3>4.5</h3>
-                            <div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <p>23 764 reviews</p>
+        <>
+            <div className="popular--card">
+                <img src={balyk} alt=""/>
+                <div className="popular--card__bottom">
+                    <h2>Cholpon-Ata</h2>
+                    <div className="popular--card__bottom--center">
+                        <h3>4.5</h3>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
                         </div>
-                        <FaArrowRightLong className="popular--card__bottom--icon"
-                        onClick={()=>{
-                            navigate("/issykKul/cholponAta")
-                        }}/>
+                        <p>23 764 reviews</p>
                     </div>
+                    <FaArrowRightLong className="popular--card__bottom--icon"
+                                      onClick={() => {
+                                          navigate("/issykKul/cholponAta")
+                                      }}/>
                 </div>
-                <div className="popular--card">
-                    <img src={balyk} alt=""/>
-                    <div className="popular--card__bottom">
-                        <h2>Cholpon-Ata</h2>
-                        <div className="popular--card__bottom--center">
-                            <h3>4.5</h3>
-                            <div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <p>23 764 reviews</p>
+            </div>
+            <div className="popular--card">
+                <img src={balyk} alt=""/>
+                <div className="popular--card__bottom">
+                    <h2>Cholpon-Ata</h2>
+                    <div className="popular--card__bottom--center">
+                        <h3>4.5</h3>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
                         </div>
-                        <FaArrowRightLong className="popular--card__bottom--icon"/>
+                        <p>23 764 reviews</p>
                     </div>
+                    <FaArrowRightLong className="popular--card__bottom--icon"/>
                 </div>
-                <div className="popular--card">
-                    <img src={balyk} alt=""/>
-                    <div className="popular--card__bottom">
-                        <h2>Cholpon-Ata</h2>
-                        <div className="popular--card__bottom--center">
-                            <h3>4.5</h3>
-                            <div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <p>23 764 reviews</p>
+            </div>
+            <div className="popular--card">
+                <img src={balyk} alt=""/>
+                <div className="popular--card__bottom">
+                    <h2>Cholpon-Ata</h2>
+                    <div className="popular--card__bottom--center">
+                        <h3>4.5</h3>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
                         </div>
-                        <FaArrowRightLong className="popular--card__bottom--icon"/>
+                        <p>23 764 reviews</p>
                     </div>
+                    <FaArrowRightLong className="popular--card__bottom--icon"/>
                 </div>
-                <div className="popular--card">
-                    <img src={balyk} alt=""/>
-                    <div className="popular--card__bottom">
-                        <h2>Cholpon-Ata</h2>
-                        <div className="popular--card__bottom--center">
-                            <h3>4.5</h3>
-                            <div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <p>23 764 reviews</p>
+            </div>
+            <div className="popular--card">
+                <img src={balyk} alt=""/>
+                <div className="popular--card__bottom">
+                    <h2>Cholpon-Ata</h2>
+                    <div className="popular--card__bottom--center">
+                        <h3>4.5</h3>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
                         </div>
-                        <FaArrowRightLong className="popular--card__bottom--icon"/>
+                        <p>23 764 reviews</p>
                     </div>
+                    <FaArrowRightLong className="popular--card__bottom--icon"/>
                 </div>
-                <div className="popular--card">
-                    <img src={balyk} alt=""/>
-                    <div className="popular--card__bottom">
-                        <h2>Cholpon-Ata</h2>
-                        <div className="popular--card__bottom--center">
-                            <h3>4.5</h3>
-                            <div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <p>23 764 reviews</p>
+            </div>
+            <div className="popular--card">
+                <img src={balyk} alt=""/>
+                <div className="popular--card__bottom">
+                    <h2>Cholpon-Ata</h2>
+                    <div className="popular--card__bottom--center">
+                        <h3>4.5</h3>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
                         </div>
-                        <FaArrowRightLong className="popular--card__bottom--icon"/>
+                        <p>23 764 reviews</p>
                     </div>
+                    <FaArrowRightLong className="popular--card__bottom--icon"/>
                 </div>
-                <div className="popular--card">
-                    <img src={balyk} alt=""/>
-                    <div className="popular--card__bottom">
-                        <h2>Cholpon-Ata</h2>
-                        <div className="popular--card__bottom--center">
-                            <h3>4.5</h3>
-                            <div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <p>23 764 reviews</p>
+            </div>
+            <div className="popular--card">
+                <img src={balyk} alt=""/>
+                <div className="popular--card__bottom">
+                    <h2>Cholpon-Ata</h2>
+                    <div className="popular--card__bottom--center">
+                        <h3>4.5</h3>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
                         </div>
-                        <FaArrowRightLong className="popular--card__bottom--icon"/>
+                        <p>23 764 reviews</p>
                     </div>
+                    <FaArrowRightLong className="popular--card__bottom--icon"/>
                 </div>
-                <div className="popular--card">
-                    <img src={balyk} alt=""/>
-                    <div className="popular--card__bottom">
-                        <h2>Cholpon-Ata</h2>
-                        <div className="popular--card__bottom--center">
-                            <h3>4.5</h3>
-                            <div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <p>23 764 reviews</p>
+            </div>
+            <div className="popular--card">
+                <img src={balyk} alt=""/>
+                <div className="popular--card__bottom">
+                    <h2>Cholpon-Ata</h2>
+                    <div className="popular--card__bottom--center">
+                        <h3>4.5</h3>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
                         </div>
-                        <FaArrowRightLong className="popular--card__bottom--icon"/>
+                        <p>23 764 reviews</p>
                     </div>
+                    <FaArrowRightLong className="popular--card__bottom--icon"/>
                 </div>
-                <div className="popular--card">
-                    <img src={balyk} alt=""/>
-                    <div className="popular--card__bottom">
-                        <h2>Cholpon-Ata</h2>
-                        <div className="popular--card__bottom--center">
-                            <h3>4.5</h3>
-                            <div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <p>23 764 reviews</p>
+            </div>
+            <div className="popular--card">
+                <img src={balyk} alt=""/>
+                <div className="popular--card__bottom">
+                    <h2>Cholpon-Ata</h2>
+                    <div className="popular--card__bottom--center">
+                        <h3>4.5</h3>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
                         </div>
-                        <FaArrowRightLong className="popular--card__bottom--icon"/>
+                        <p>23 764 reviews</p>
                     </div>
+                    <FaArrowRightLong className="popular--card__bottom--icon"/>
                 </div>
-                <div className="popular--card">
-                    <img src={balyk} alt=""/>
-                    <div className="popular--card__bottom">
-                        <h2>Cholpon-Ata</h2>
-                        <div className="popular--card__bottom--center">
-                            <h3>4.5</h3>
-                            <div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <p>23 764 reviews</p>
+            </div>
+            <div className="popular--card">
+                <img src={balyk} alt=""/>
+                <div className="popular--card__bottom">
+                    <h2>Cholpon-Ata</h2>
+                    <div className="popular--card__bottom--center">
+                        <h3>4.5</h3>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
                         </div>
-                        <FaArrowRightLong className="popular--card__bottom--icon"/>
+                        <p>23 764 reviews</p>
                     </div>
+                    <FaArrowRightLong className="popular--card__bottom--icon"/>
                 </div>
+            </div>
 
-            </>
+        </>
     );
 };
 
