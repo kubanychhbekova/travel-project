@@ -6,6 +6,7 @@ import {FaMapLocation} from "react-icons/fa6";
 import {RiCalendarEventLine} from "react-icons/ri";
 import Places from "./choose/html/places";
 import Hotels from "./choose/html/hotels";
+import Kitchen from "./choose/html/kitchen";
 const CholponAta = () => {
     const [active,setActive]=useState(true)
     const [active1,setActive1]=useState(false)
@@ -17,6 +18,8 @@ const CholponAta = () => {
             return <Places/>
         }else if(active1){
             return <Hotels/>
+        }else if(active2){
+            return <Kitchen/>
         }
     }
     return (

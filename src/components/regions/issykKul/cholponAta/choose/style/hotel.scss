@@ -1,3 +1,19 @@
+@mixin btn {
+  display: inline-flex;
+  padding: 10px 20px;
+  align-items: center;
+  gap: 4px;
+  border-radius: 8px;
+  border: 2px solid var(--text-dark, #242424);
+  color: var(--text-dark, #242424);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  background: transparent;
+  cursor: pointer;
+}
 .hotel {
   &--second {
     padding: 64px 0 100px 0;
@@ -23,6 +39,12 @@
       p {
         position: absolute;
         right: 0;
+        color: #069;
+        font-family: Arial;
+        font-size: 21.836px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 34.314px; /* 157.143% */
       }
     }
 
@@ -30,6 +52,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 90px;
+
       &--card {
         position: relative;
         width: 340px;
@@ -132,5 +155,396 @@
       }
     }
   }
+  &--third {
+    h2 {
+      color: var(--h-1, #004A60);
+      font-family: Montserrat;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 28.409px; /* 88.778% */
+    }
+
+    &__image {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      div {
+        img {
+          width: 243.234px;
+
+        }
+      }
+    }
+
+    &__bottom {
+      display: flex;
+      align-items: start;
+      padding: 45px 0;
+      gap: 77px;
+      &--left {
+        margin-left: 0;
+        width: 60%;
+
+        &__first {
+          display: flex;
+          align-items: center;
+          gap: 252px;
+          padding-bottom: 45px;
+
+          &--name {
+            h3 {
+              color: #242424;
+              font-family: Montserrat;
+              font-size: 27.885px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+            }
+
+            p {
+              color: #9A9A9A;
+              font-family: Montserrat;
+              font-size: 15.935px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+            }
+          }
+
+          &--icon {
+            display: flex;
+            align-items: center;
+            gap: 23px;
+
+            .icon {
+              font-size: 31px;
+            }
+          }
+        }
+
+        &__second {
+          display: flex;
+
+          div {
+            border-radius: 7.967px;
+            background: #EFF0F2;
+            width: 175.28px;
+            height: 159.345px;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 18px;
+
+            .icon {
+              font-size: 42px;
+            }
+
+            p {
+              color: #242424;
+              font-family: Montserrat;
+              font-size: 15.935px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: normal;
+            }
+          }
+        }
+
+        &__third {
+          padding: 56px 0;
+
+          h3 {
+            color: #242424;
+            font-family: Montserrat;
+            font-size: 21.91px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+          }
+
+          p {
+            color: #9A9A9A;
+            font-family: Montserrat;
+            font-size: 14.939px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 19.918px;
+            margin-top: 13px;
+          }
+
+        }
+
+        &__fouth {
+          h3 {
+            color: #242424;
+            font-family: Montserrat;
+            font-size: 21.91px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+          }
+
+          &--center {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 160px;
+            margin: 25px 0 40px 0;
+
+            &__left {
+              margin-left: 0;
+
+              div {
+                display: flex;
+                gap: 10px;
+                margin-bottom: 15px;
+
+                .icon {
+                  font-size: 22px;
+                  margin: 0;
+                  color: #242424;
+
+                }
+
+                p {
+                  text-align: start;
+                  color: #242424;
+                  font-family: Montserrat;
+                  font-size: 15.935px;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: normal;
+                  margin: 0;
+                }
+              }
+            }
+
+            &__right {
+              margin-left: 0;
+
+              div {
+                display: flex;
+                gap: 10px;
+                margin-bottom: 15px;
+
+                .icon {
+                  font-size: 22px;
+                  margin: 0;
+                  color: #242424;
+
+                }
+
+                p {
+                  text-align: start;
+                  color: #242424;
+                  font-family: Montserrat;
+                  font-size: 15.935px;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: normal;
+                  margin: 0;
+                }
+              }
+            }
+          }
+
+          button {
+            border-radius: 5.975px;
+            border: 0.996px solid #242424;
+            background: #FFF;
+            color: #242424;
+            font-family: Montserrat;
+            font-size: 14.939px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            padding: 20px 35px;
+            cursor: pointer;
+          }
+        }
+
+        &__fives {
+          padding: 70px 0;
+          h3 {
+            color: #242424;
+            font-family: Montserrat;
+            font-size: 21.91px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+          }
+
+          &--center {
+            display: flex;
+            margin-top: 25px;
+            gap: 25px;
+            &__left {
+              margin-left: 0;
+              div {
+                display: flex;
+                gap: 15px;
+                align-items: center;
+                margin-bottom: 11px;
+                .icon{
+                  font-size: 24px;
+                  margin: 0;
+                }
+                p {
+                  color: #242424;
+                  font-family: Montserrat;
+                  font-size: 15.935px;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: normal;
+                  margin: 0;
+                }
+              }
+            }
+            &__right {
+              margin-left: 0;
+              div {
+                display: flex;
+                gap: 15px;
+                align-items: center;
+                margin-bottom: 11px;
+                .icon{
+                  font-size: 24px;
+                  margin: 0;
+                }
+                p {
+                  color: #242424;
+                  font-family: Montserrat;
+                  font-size: 15.935px;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: normal;
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+
+      }
+      &--right{
+        border-radius: 9.959px;
+        background: #FFF;
+        box-shadow: 0 0 15.934520721435547px 0 rgba(194, 198, 204, 0.60);
+        padding: 35px 30px;
+        h2{
+          color: #242424;
+          font-family: Montserrat;
+          font-size: 21.91px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+        .line{
+          width: 323.67px;
+          height: 0.996px;
+          background: #E0E2E6;
+          margin: 30px 0;
+        }
+        p{
+          color: #9A9A9A;
+          font-family: Montserrat;
+          font-size: 15.935px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          margin-bottom: 5px;
+        }
+        button{
+          border-radius: 8px;
+          background:  #004A60;
+          color: #FFF;
+          font-family: Montserrat;
+          font-size: 14.939px;
+          font-style: normal;
+          font-weight: 700;
+          width: 322.674px;
+          height: 59.754px;
+          margin: 30px 0 45px 0;
+          cursor: pointer;
+          outline: none;
+        }
+        &__bottom{
+          display: flex;
+          align-items: center;
+          gap: 22px;
+          div{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            cursor: pointer;
+            .icon{
+              font-size: 21px;
+
+            }
+            p{
+              color: #242424;
+              font-family: Montserrat;
+              font-size: 14.939px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: normal;
+            }
+
+          }
+        }
+      }
+    }
+  }
+  &--fouth{
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      gap: 35px;
+
+      &__left {
+        width: 31.5%;
+        margin-left: 0;
+
+        &--top {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+
+          button {
+            @include btn;
+          }
+        }
+      }
+
+      &__right {
+
+        &--top {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+
+          input {
+            padding: 11px 255px 11px 17px;
+            border-radius: 41px;
+            background: #E5E4E9;
+            color: #5A5A5A;
+            font-family: Inter;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            border: none;
+            outline: none;
+          }
+
+          button {
+            @include btn;
+          }
+        }
+      }
+    }
 
 }
