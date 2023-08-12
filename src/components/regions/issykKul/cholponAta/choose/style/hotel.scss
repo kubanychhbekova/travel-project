@@ -1,0 +1,136 @@
+.hotel {
+  &--second {
+    padding: 64px 0 100px 0;
+
+    &__title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      margin-bottom: 53px;
+
+      h2 {
+        color: var(--h-1, #004A60);
+        font-family: Montserrat;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        position: absolute;
+        left: 0;
+      }
+
+      p {
+        position: absolute;
+        right: 0;
+      }
+    }
+
+    &__cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 90px;
+      &--card {
+        position: relative;
+        width: 340px;
+        border-radius: 8px;
+        background: #FFF;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+        margin-bottom: -60px;
+
+        &__icon {
+          position: absolute;
+          top: 12px;
+          right: 12px;
+          width: 46px;
+          height: 46px;
+          background: white;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+
+          &--ai {
+            font-size: 26px;
+          }
+        }
+
+        p {
+          color: var(--grey-text, #5A5A5A);
+          font-family: Montserrat;
+          font-size: 18.5px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 140%;
+        }
+
+        img {
+          border-top-right-radius: 8px;
+          border-top-left-radius: 8px;
+        }
+
+        &__bottom {
+          padding: 10px 16px;
+
+          h2 {
+            color: var(--h-2, #242424);
+            text-align: start;
+            font-family: Montserrat;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 5px
+          }
+
+          &--center {
+            display: flex;
+            align-items: center;
+            width: 239px;
+            margin-left: 0;
+            gap: 16px;
+            margin-bottom: 11px;
+
+            div {
+              display: flex;
+              gap: 4px;
+
+              div {
+                width: 21px;
+                height: 21px;
+                background: #3C5F63;
+                border-radius: 50%;
+              }
+
+              div:nth-child(5) {
+                background-color: transparent;
+                background-image: conic-gradient(at 50% 0%, white 50%, #3C5F63 0);
+                border-radius: 50%;
+                position: relative;
+
+                &::before {
+                  content: '';
+                  height: 50%;
+                  background-color: white;
+                  position: absolute;
+                  top: 0;
+
+                }
+              }
+
+            }
+          }
+
+          &--icon {
+            font-size: 23px;
+            margin-left: 280px;
+            color: #33363F;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+}

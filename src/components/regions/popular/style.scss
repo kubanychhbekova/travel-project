@@ -1,0 +1,71 @@
+.popular{
+  &--card{
+    width: 340px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+    margin-bottom: -60px;
+    img {
+      border-top-right-radius:8px ;
+      border-top-left-radius: 8px;
+    }
+    &__bottom{
+      padding: 10px 16px;
+
+      h2{
+        color: var(--h-2, #242424);
+        text-align: start;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 5px
+      }
+      &--center{
+        display: flex;
+        align-items: center;
+        width: 180px;
+        margin-left: 0;
+        div{
+          display: flex;
+          gap: 2px;
+          div{
+            width:9px;
+            height:9px;
+            background: #3C5F63;
+            border-radius: 50%;
+          }
+          div:nth-child(5){
+            background-color: transparent;
+            background-image: conic-gradient(at 50% 0%, white 50%, #3C5F63 0);
+            border-radius: 50%;
+            position: relative;
+            &::before{
+              content: '';
+              height: 50%;
+              background-color: white;
+              position: absolute;
+              top: 0;
+
+            }
+          }
+
+        }
+        p{
+          color: var(--grey-text, #5A5A5A);
+          font-family: Montserrat;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 140%;
+        }
+      }
+      &--icon{
+        font-size: 24px;
+        margin-left: 280px;
+        cursor: pointer;
+      }
+    }
+  }
+}

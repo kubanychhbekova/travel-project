@@ -1,0 +1,85 @@
+#cholpon{
+  padding: 175px 0 138px 0;
+  .cholpon{
+    &--first {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      gap: 36px;
+      position: relative;
+
+img:nth-child(1){
+  margin-left: 0;
+  width: 605px;
+}
+      img:nth-child(2) {
+        position: absolute;
+        bottom: 17px;
+        left: 25px;
+      }
+
+      &__title {
+        margin-left: 0;
+        h1 {
+          @include h1;
+          margin-top: -20px;
+
+        }
+
+        p {
+          color: #242424;
+          font-family: Frank Ruhl Libre;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 140%;
+          letter-spacing: 1.2px;
+          width: 559px;
+        }
+      }
+    }
+    &--second{
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      width: 200px;
+      margin-left: 0;
+      padding: 100px 0 32px 0;
+      div{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 16px;
+        border-radius: 8px;
+        border: 2px solid var(--text-dark, #242424);
+        cursor: pointer;
+        p{
+          color: var(--text-dark, #242424);
+          font-family: Montserrat;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+        .icon{
+          font-size: 20px;
+          color: #004A60;
+        }
+      }
+      .active{
+        background: var(--h-1, #004A60);
+        border: none;
+        outline: none;
+        .icon{
+color: white;
+        }
+        p{
+          color: white;
+        }
+      }
+    }
+    &--fourth{
+
+    }
+  }
+}

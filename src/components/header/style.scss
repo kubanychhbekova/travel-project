@@ -1,47 +1,82 @@
-@mixin color{
+@mixin color {
   color: var(--h-1, #004A60);
 }
-@mixin border{
+
+@mixin border {
   border: 1px solid var(--h-1, #004A60);
 }
-#header{
-  background: url("../../img/image 989.png") no-repeat center/cover;
+
+#header {
   width: 100%;
   height: 100px;
   backdrop-filter: blur(7.5px);
-  .header{
-display: flex;
-    align-items: center;
-    padding: 34px 0;
-  &--center{
+  background-color: rgba(255, 255, 255, 0.50);
+ position: fixed;
+z-index: 5;
+  .header {
     display: flex;
     align-items: center;
-    gap: 50px;
-    h4{
-  @include color;
-      font-family: Frank Ruhl Libre;
-      font-size: 24px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
-      &:active{
-        color: var(--variant-color, #FEFFFF);
+
+position: relative;
+    &--center {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+position: absolute;
+      right: 385px;
+      top: 33px;
+      h4 {
+        @include color;
         font-family: Frank Ruhl Libre;
         font-size: 24px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
+        cursor: pointer;
+
+        &:active {
+          color: var(--variant-color, #FEFFFF);
+          font-family: Frank Ruhl Libre;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+
+        }
       }
     }
-  }
-    &--right{
-      display: inherit;
-      gap: 51px;
 
-      select{
+    &--modal {
+      position: absolute;
+      background: rgba(255, 255, 255, 0.60);
+      backdrop-filter: blur(7.5px);
+
+      padding: 16px 41px;
+     top: 100px;
+      left: 25%;
+
+      h2{
+        color: var(--h-1, #004A60);
+        font-family: Frank Ruhl Libre;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        cursor: pointer;
+      }
+
+    }
+
+    &--right {
+      display: inherit;
+      gap: 31px;
+position: absolute;
+      right: 0;
+      top: 27px;
+      select {
         border-radius: 8px;
-      @include border;
-        padding: 8px 32px;
+        @include border;
+        padding: 8px 11px;
         background: transparent;
         color: var(--h-1, #004A60);
         font-family: Frank Ruhl Libre;
@@ -49,25 +84,28 @@ display: flex;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-      }
-      &__log {
-      button{
-        border-radius: 8px;
-        background: var(--h-1, #004A60);
-        width: 125px;
-        padding: 8px 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        color: #FFF;
-        font-family: Frank Ruhl Libre;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
         outline: none;
+        cursor: pointer;
       }
+
+      &__log {
+        button {
+          border-radius: 8px;
+          background: var(--h-1, #004A60);
+          width: 125px;
+          padding: 8px 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          color: #FFF;
+          font-family: Frank Ruhl Libre;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          outline: none;
+        }
       }
 
     }
