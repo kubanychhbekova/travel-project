@@ -8,26 +8,8 @@ import HandsPage from "./components/HandsPage";
 import Currency from "./components/Currency";
 import InstrumentPage from "./components/InstrumentPage";
 import Kitchen from "./components/KitchenPage";
-import { Route, Routes } from "react-router-dom";
-
-function App() {
-  return (
-    <div className="App">
-      <Header />
-      <Footer />
-      <Culture />
-      <Routes>
-        <Route path="/games" element={<GamesPage />} />
-        <Route path="/national" element={<NationalPage />} />
-        <Route path="/hand" element={<HandsPage />} />
-        <Route path="/currency" element={<Currency />} />
-        <Route path="/instrument" element={<InstrumentPage />} />
-        <Route path="/kitchen" element={<Kitchen />} />
-      </Routes>
-    </div>
-  );
-import Hero from './components/Hero';
 import {Route, Routes} from "react-router-dom";
+import Hero from "./components/Hero";
 import IssytKyl from "./components/regions/issykKul/issytKyl";
 import CholponAta from "./components/regions/issykKul/cholponAta/cholponAta";
 
@@ -37,13 +19,19 @@ function App() {
             <Header/>
             <Routes>
                 <Route path={"/"} element={<Hero/>}/>
+                <Route path={"/culture"} element={<Culture/>}/>
                 <Route path={"/issykKul"} element={<IssytKyl/>}/>
                 <Route path={"/issykKul/cholponAta"} element={<CholponAta/>}/>
+                <Route path="/games" element={<GamesPage/>}/>
+                <Route path="/national" element={<NationalPage/>}/>
+                <Route path="/hand" element={<HandsPage/>}/>
+                <Route path="/currency" element={<Currency/>}/>
+                <Route path="/instrument" element={<InstrumentPage/>}/>
+                <Route path="/kitchen" element={<Kitchen/>}/>
             </Routes>
             <Footer/>
         </div>
     );
 
 }
-
-export default App;
+    export default App;
