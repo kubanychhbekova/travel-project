@@ -9,11 +9,11 @@ const Header = () => {
                 <div className="header">
                     <div className="header--logo"></div>
                     <div className="header--center">
-                        <h4>Home</h4>
+                 <NavLink to={"/"}>       <h4>Home</h4></NavLink>
                         <h4 onClick={() => {
                             setModal(!modal)
                         }}>Regions</h4>
-                        <h4>Culture</h4>
+                      <NavLink to={"/culture"}>  <h4>Culture</h4></NavLink>
                         <h4>Gallery</h4>
                         <h4>Routes</h4>
                     </div>
