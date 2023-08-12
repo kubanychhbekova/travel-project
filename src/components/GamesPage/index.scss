@@ -1,0 +1,191 @@
+#games {
+    .container {
+
+        .games {
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+
+            &--page {
+                background: url("../../img/culture.png") no-repeat center/cover;
+                min-height: 30vh;
+                width: 100%;
+                margin: 32px 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                h1 {
+                    color: #004A60;
+                    text-align: center;
+                    font-family: Abril Fatface, sans-serif;
+                    font-size: 64px;
+                    font-weight: 400;
+                }
+
+                p {
+                    width: 811px;
+                    color: #000;
+                    font-family: Frank Ruhl Libre, sans-serif;
+                    font-size: 24px;
+                    font-weight: 500;
+                }
+            }
+
+            &--page2 {
+                display: flex;
+                align-items: start;
+                justify-content: start;
+                margin: 0 60px 100px 0;
+
+                img {
+                    margin-right: 38px;
+                }
+
+                &__text {
+                    h1 {
+                        color: #000;
+                        font-family: Montserrat, sans-serif;
+                        font-size: 24px;
+                        font-weight: 700;
+                        margin-bottom: 32px;
+                    }
+
+                    p {
+                        width: 570px;
+                        color: #242424;
+                        font-family: Montserrat, sans-serif;
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 30px;
+                        /* 150% */
+                    }
+                }
+            }
+
+            &--page3 {
+                display: flex;
+                align-items: start;
+                justify-content: start;
+                margin: 0 60px 100px 0;
+
+                img {
+                    margin-right: 38px;
+                }
+
+                &__text {
+                    h1 {
+                        color: #000;
+                        font-family: Montserrat, sans-serif;
+                        font-size: 24px;
+                        font-weight: 700;
+                        margin-bottom: 32px;
+                    }
+
+                    p {
+                        width: 575px;
+                        color: #242424;
+                        font-family: Montserrat, sans-serif;
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 30px;
+                        /* 150% */
+                    }
+                }
+            }
+
+            &--page4 {
+                display: flex;
+                align-items: start;
+                justify-content: start;
+                margin: 0 60px 100px 0;
+
+                img {
+                    margin-right: 38px;
+                }
+
+                &__text {
+                    h1 {
+                        color: #000;
+                        font-family: Montserrat, sans-serif;
+                        font-size: 24px;
+                        font-weight: 700;
+                        margin-bottom: 32px;
+                    }
+
+                    p {
+                        width: 534px;
+                        color: #242424;
+                        font-family: Montserrat, sans-serif;
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 30px;
+                        /* 150% */
+                    }
+                }
+            }
+
+            &--page5 {
+                display: flex;
+                align-items: start;
+                justify-content: start;
+                margin: 0 60px 160px 0;
+
+                img {
+                    margin-right: 38px;
+                }
+
+                &__text {
+                    h1 {
+                        color: #000;
+                        font-family: Montserrat, sans-serif;
+                        font-size: 24px;
+                        font-weight: 700;
+                        margin-bottom: 32px;
+                    }
+
+                    p {
+                        width: 534px;
+                        color: #242424;
+                        font-family: Montserrat, sans-serif;
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 30px;
+                        /* 150% */
+                    }
+                }
+            }
+
+            &--page6 {
+                display: flex;
+                align-items: start;
+                justify-content: start;
+                margin: 0 60px 80px 0;
+
+                img {
+                    margin-right: 38px;
+                }
+
+                &__text {
+                    h1 {
+                        color: #000;
+                        font-family: Montserrat, sans-serif;
+                        font-size: 24px;
+                        font-weight: 700;
+                        margin-bottom: 32px;
+                    }
+
+                    p {
+                        width: 534px;
+                        color: #242424;
+                        font-family: Montserrat, sans-serif;
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 30px;
+                        /* 150% */
+                    }
+                }
+            }
+        }
+    }
+}
