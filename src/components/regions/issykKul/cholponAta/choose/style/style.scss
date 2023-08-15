@@ -1,19 +1,4 @@
-@mixin btn {
-  display: inline-flex;
-  padding: 10px 20px;
-  align-items: center;
-  gap: 4px;
-  border-radius: 8px;
-  border: 2px solid var(--text-dark, #242424);
-  color: var(--text-dark, #242424);
-  font-family: Montserrat;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  background: transparent;
-  cursor: pointer;
-}
+
 
 .places {
   ul {
@@ -99,75 +84,21 @@
     margin: 75px 0 105px 0;
   }
 
-  h1 {
-    color: var(--h-1, #004A60);
-    font-family: Abril Fatface;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%; /* 89.6px */
-  }
 
-  &--review {
-    display: flex;
-    align-items: start;
-    justify-content: space-between;
-    gap: 35px;
-
-    &__left {
-      width: 31.5%;
-      margin-left: 0;
-
-      &--top {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-
-        button {
-          @include btn;
-        }
-      }
-    }
-
-    &__right {
-
-      &--top {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-
-        input {
-          padding: 11px 255px 11px 17px;
-          border-radius: 41px;
-          background: #E5E4E9;
-          color: #5A5A5A;
-          font-family: Inter;
-          font-size: 20px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: normal;
-          border: none;
-          outline: none;
-        }
-
-        button {
-          @include btn;
-        }
-      }
-    }
-  }
 
   .slick-slider {
     position: relative;
     width: 100%;
-    .slick-prev{
-    position: absolute;
-    border: none;
-    bottom: 15px;
-    left: 38%;
-    background: white;
-    color: transparent;
-  }
+
+    .slick-prev {
+      position: absolute;
+      border: none;
+      bottom: 15px;
+      left: 38%;
+      background: white;
+      color: transparent;
+    }
+
     .slick-prev::after {
       content: "<";
       position: absolute;
@@ -178,29 +109,33 @@
       display: block;
       width: 39%;
       height: 100%;
-      background:white;
+      background: white;
       color: black;
       text-align: center;
 
       z-index: 1;
     }
+
     .slick-list {
       overflow: hidden;
       width: 100%;
+
       .slick-track {
         display: flex;
         gap: 98px;
-        width: 100%!important;
+        width: 100% !important;
         margin-bottom: 50px;
       }
     }
-    .slick-next{
+
+    .slick-next {
       position: absolute;
       border: none;
       left: 56%;
 
 
     }
+
     .slick-next::after {
       content: ">";
       position: absolute;
@@ -211,12 +146,13 @@
       display: block;
       width: 100%;
       height: 100%;
-      background:white;
+      background: white;
       color: black;
       text-align: center;
       line-height: 40px;
       z-index: 1;
     }
+
     .slick-dots {
       display: flex !important;
       width: 124px;
@@ -224,19 +160,23 @@
       align-items: center;
       list-style-type: none;
       gap: 10px;
-      .slick-active{
+
+      .slick-active {
         background: rgba(60, 95, 99, 1);
         border-radius: 50%;
-        button{
+
+        button {
           color: rgba(229, 228, 233, 1);
         }
       }
+
       li {
         width: 38px;
         height: 24px;
         padding: 8px 15px 8px 15px;
 
         text-align: center;
+
         button {
 
           color: #000;
@@ -254,13 +194,42 @@
   }
 
 
+  h1 {
+    color: var(--h-1, #004A60);
+    font-family: Abril Fatface;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    margin-top: 70px;
+  }
 
   &--popular {
     display: flex;
     align-items: start;
     gap: 98px;
     padding-top: 50px;
+    padding-bottom: 50px;
     height: 400px;
+    position: relative;
+
+    &__icon {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      width: 46px;
+      height: 46px;
+      background: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      &--ai {
+        font-size: 26px;
+      }
+    }
 
   }
 }

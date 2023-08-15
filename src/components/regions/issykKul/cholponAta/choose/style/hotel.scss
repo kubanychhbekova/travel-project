@@ -162,7 +162,8 @@
       font-size: 32px;
       font-style: normal;
       font-weight: 700;
-      line-height: 28.409px; /* 88.778% */
+      line-height: 28.409px;
+      margin-bottom: 27px;
     }
 
     &__image {
@@ -498,53 +499,5 @@
       }
     }
   }
-  &--fouth{
-      display: flex;
-      align-items: start;
-      justify-content: space-between;
-      gap: 35px;
+  }
 
-      &__left {
-        width: 31.5%;
-        margin-left: 0;
-
-        &--top {
-          display: flex;
-          align-items: center;
-          gap: 8px;
-
-          button {
-            @include btn;
-          }
-        }
-      }
-
-      &__right {
-
-        &--top {
-          display: flex;
-          align-items: center;
-          gap: 16px;
-
-          input {
-            padding: 11px 255px 11px 17px;
-            border-radius: 41px;
-            background: #E5E4E9;
-            color: #5A5A5A;
-            font-family: Inter;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-            border: none;
-            outline: none;
-          }
-
-          button {
-            @include btn;
-          }
-        }
-      }
-    }
-
-}

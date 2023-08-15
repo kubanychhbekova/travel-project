@@ -5,6 +5,7 @@
     background: #FFF;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
     margin-bottom: -60px;
+    position: relative;
     img {
       border-top-right-radius:8px ;
       border-top-left-radius: 8px;
@@ -65,6 +66,23 @@
         font-size: 24px;
         margin-left: 280px;
         cursor: pointer;
+      }
+    }
+    &__icon {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      &--ai {
+        font-size: 26px;
+        color: deepskyblue;
+        padding: 8px;
+        background: white;
+        border-radius: 50%;
       }
     }
   }
