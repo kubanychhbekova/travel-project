@@ -11,8 +11,43 @@ import food from "../../../img/food.png"
 import food2 from "../../../img/food2.png"
 import temp from "../../../img/temp.png"
 import Popular from "../popular/popular";
+import Slider from "react-slick";
 
 const IssykKyl = () =>{
+    const settings = {
+        dots: true,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        initialSlide: 0,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    };
     return (
         <div id="kul">
             <div className="container">
@@ -54,34 +89,90 @@ const IssykKyl = () =>{
                         </div>
 
                     </div>
+                    <h1>What to try in Issyk-Kul?</h1>
                     <div className="kul--third">
-                        <h1>What to try in Issyk-Kul?</h1>
-                        <div className="kul--third__bottom">
-                            <div className="kul--third__bottom--left">
-                                <h5>Ashlyanfu</h5>
-                                <p>The name of the dish sounds and is spelled differently: ashlyanfu and ashlyamfu, and
-                                    even ash-lyanfu. There is a version that the Chinese “len-fyn” (or “cold starch”)
-                                    was a distant ancestor of the dish popular in Kyrgyzstan, among the Dungan settlers
-                                    it is “lyangfu”. Together with the Turkic “ash”, meaning “dish, food”, a new name
-                                    appeared: the Chinese “analog” is made a little differently.</p>
+                        <Slider {...settings}>
+                            <div className="kul--third__bottom">
+                                <div className="kul--third__bottom--left">
+                                    <h5>Ashlyanfu</h5>
+                                    <p>The name of the dish sounds and is spelled differently: ashlyanfu and ashlyamfu, and
+                                        even ash-lyanfu. There is a version that the Chinese “len-fyn” (or “cold starch”)
+                                        was a distant ancestor of the dish popular in Kyrgyzstan, among the Dungan settlers
+                                        it is “lyangfu”. Together with the Turkic “ash”, meaning “dish, food”, a new name
+                                        appeared: the Chinese “analog” is made a little differently.</p>
+                                </div>
+                                <div className="kul--third__bottom--center">
+                                    <img src={food} alt=""/>
+                                    <div className="kul--third__bottom--center__img">
+                                        <img src={food} alt=""/>
+                                        <img src={food2} alt=""/>
+                                        <img src={food} alt=""/>
+                                    </div>
+                                </div>
+                                <div className="kul--third__bottom--right">
+                                    <h5>What is included in the dish</h5>
+                                    <p>The main parts are "jelly" made of starch, noodles and hot sauce. There are many more
+                                        detailed ashlyanfu recipes in modern culinary practice. Someone claims that it is
+                                        not made with meat or vegetables. Some hold an alternative point of view. In some
+                                        cases, wheat noodles are recommended to be pulled out, as for lagman.
+                                    </p>
+                                </div>
                             </div>
-                            <div className="kul--third__bottom--center">
-                                <img src={food} alt=""/>
-                              <div className="kul--third__bottom--center__img">
-                                  <img src={food} alt=""/>
-                                  <img src={food2} alt=""/>
-                                  <img src={food} alt=""/>
-                              </div>
+                            <div className="kul--third__bottom">
+                                <div className="kul--third__bottom--left">
+                                    <h5>Ashlyanfu</h5>
+                                    <p>The name of the dish sounds and is spelled differently: ashlyanfu and ashlyamfu, and
+                                        even ash-lyanfu. There is a version that the Chinese “len-fyn” (or “cold starch”)
+                                        was a distant ancestor of the dish popular in Kyrgyzstan, among the Dungan settlers
+                                        it is “lyangfu”. Together with the Turkic “ash”, meaning “dish, food”, a new name
+                                        appeared: the Chinese “analog” is made a little differently.</p>
+                                </div>
+                                <div className="kul--third__bottom--center">
+                                    <img src={food} alt=""/>
+                                    <div className="kul--third__bottom--center__img">
+                                        <img src={food} alt=""/>
+                                        <img src={food2} alt=""/>
+                                        <img src={food} alt=""/>
+                                    </div>
+                                </div>
+                                <div className="kul--third__bottom--right">
+                                    <h5>What is included in the dish</h5>
+                                    <p>The main parts are "jelly" made of starch, noodles and hot sauce. There are many more
+                                        detailed ashlyanfu recipes in modern culinary practice. Someone claims that it is
+                                        not made with meat or vegetables. Some hold an alternative point of view. In some
+                                        cases, wheat noodles are recommended to be pulled out, as for lagman.
+                                    </p>
+                                </div>
                             </div>
-                            <div className="kul--third__bottom--right">
-                                <h5>What is included in the dish</h5>
-                                <p>The main parts are "jelly" made of starch, noodles and hot sauce. There are many more
-                                    detailed ashlyanfu recipes in modern culinary practice. Someone claims that it is
-                                    not made with meat or vegetables. Some hold an alternative point of view. In some
-                                    cases, wheat noodles are recommended to be pulled out, as for lagman.
-                                </p>
+                            <div className="kul--third__bottom">
+                                <div className="kul--third__bottom--left">
+                                    <h5>Ashlyanfu</h5>
+                                    <p>The name of the dish sounds and is spelled differently: ashlyanfu and ashlyamfu, and
+                                        even ash-lyanfu. There is a version that the Chinese “len-fyn” (or “cold starch”)
+                                        was a distant ancestor of the dish popular in Kyrgyzstan, among the Dungan settlers
+                                        it is “lyangfu”. Together with the Turkic “ash”, meaning “dish, food”, a new name
+                                        appeared: the Chinese “analog” is made a little differently.</p>
+                                </div>
+                                <div className="kul--third__bottom--center">
+                                    <img src={food} alt=""/>
+                                    <div className="kul--third__bottom--center__img">
+                                        <img src={food} alt=""/>
+                                        <img src={food2} alt=""/>
+                                        <img src={food} alt=""/>
+                                    </div>
+                                </div>
+                                <div className="kul--third__bottom--right">
+                                    <h5>What is included in the dish</h5>
+                                    <p>The main parts are "jelly" made of starch, noodles and hot sauce. There are many more
+                                        detailed ashlyanfu recipes in modern culinary practice. Someone claims that it is
+                                        not made with meat or vegetables. Some hold an alternative point of view. In some
+                                        cases, wheat noodles are recommended to be pulled out, as for lagman.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
+                        </Slider>
+
+
                     </div>
                     <div className="kul--four">
                         <h1>Popular places</h1>

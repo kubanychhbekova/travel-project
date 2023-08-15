@@ -3,6 +3,7 @@ import img from "../../../img/issykkul.png";
 import balyk from "../../../img/balyk.png";
 import {FaArrowRightLong} from "react-icons/fa6";
 import {useNavigate} from "react-router-dom";
+import {AiFillHeart} from "react-icons/ai";
 
 const Popular = () => {
     const navigate = useNavigate()
@@ -28,23 +29,8 @@ const Popular = () => {
                                           navigate("/issykKul/cholponAta")
                                       }}/>
                 </div>
-            </div>
-            <div className="popular--card">
-                <img src={balyk} alt=""/>
-                <div className="popular--card__bottom">
-                    <h2>Cholpon-Ata</h2>
-                    <div className="popular--card__bottom--center">
-                        <h3>4.5</h3>
-                        <div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <p>23 764 reviews</p>
-                    </div>
-                    <FaArrowRightLong className="popular--card__bottom--icon"/>
+                <div className="hotel--second__cards--card__icon">
+                    <AiFillHeart className="popular--card__icon--ai"/>
                 </div>
             </div>
             <div className="popular--card">
@@ -62,7 +48,13 @@ const Popular = () => {
                         </div>
                         <p>23 764 reviews</p>
                     </div>
-                    <FaArrowRightLong className="popular--card__bottom--icon"/>
+                    <FaArrowRightLong className="popular--card__bottom--icon"
+                                      onClick={() => {
+                                          navigate("/issykKul/cholponAta")
+                                      }}/>
+                </div>
+                <div className="hotel--second__cards--card__icon">
+                    <AiFillHeart className="popular--card__icon--ai"/>
                 </div>
             </div>
             <div className="popular--card">
@@ -80,7 +72,13 @@ const Popular = () => {
                         </div>
                         <p>23 764 reviews</p>
                     </div>
-                    <FaArrowRightLong className="popular--card__bottom--icon"/>
+                    <FaArrowRightLong className="popular--card__bottom--icon"
+                                      onClick={() => {
+                                          navigate("/issykKul/cholponAta")
+                                      }}/>
+                </div>
+                <div className="hotel--second__cards--card__icon">
+                    <AiFillHeart className="popular--card__icon--ai"/>
                 </div>
             </div>
             <div className="popular--card">
@@ -98,7 +96,13 @@ const Popular = () => {
                         </div>
                         <p>23 764 reviews</p>
                     </div>
-                    <FaArrowRightLong className="popular--card__bottom--icon"/>
+                    <FaArrowRightLong className="popular--card__bottom--icon"
+                                      onClick={() => {
+                                          navigate("/issykKul/cholponAta")
+                                      }}/>
+                </div>
+                <div className="hotel--second__cards--card__icon">
+                    <AiFillHeart className="popular--card__icon--ai"/>
                 </div>
             </div>
             <div className="popular--card">
@@ -116,7 +120,13 @@ const Popular = () => {
                         </div>
                         <p>23 764 reviews</p>
                     </div>
-                    <FaArrowRightLong className="popular--card__bottom--icon"/>
+                    <FaArrowRightLong className="popular--card__bottom--icon"
+                                      onClick={() => {
+                                          navigate("/issykKul/cholponAta")
+                                      }}/>
+                </div>
+                <div className="hotel--second__cards--card__icon">
+                    <AiFillHeart className="popular--card__icon--ai"/>
                 </div>
             </div>
             <div className="popular--card">
@@ -134,7 +144,13 @@ const Popular = () => {
                         </div>
                         <p>23 764 reviews</p>
                     </div>
-                    <FaArrowRightLong className="popular--card__bottom--icon"/>
+                    <FaArrowRightLong className="popular--card__bottom--icon"
+                                      onClick={() => {
+                                          navigate("/issykKul/cholponAta")
+                                      }}/>
+                </div>
+                <div className="hotel--second__cards--card__icon">
+                    <AiFillHeart className="popular--card__icon--ai"/>
                 </div>
             </div>
             <div className="popular--card">
@@ -152,7 +168,13 @@ const Popular = () => {
                         </div>
                         <p>23 764 reviews</p>
                     </div>
-                    <FaArrowRightLong className="popular--card__bottom--icon"/>
+                    <FaArrowRightLong className="popular--card__bottom--icon"
+                                      onClick={() => {
+                                          navigate("/issykKul/cholponAta")
+                                      }}/>
+                </div>
+                <div className="hotel--second__cards--card__icon">
+                    <AiFillHeart className="popular--card__icon--ai"/>
                 </div>
             </div>
             <div className="popular--card">
@@ -170,9 +192,41 @@ const Popular = () => {
                         </div>
                         <p>23 764 reviews</p>
                     </div>
-                    <FaArrowRightLong className="popular--card__bottom--icon"/>
+                    <FaArrowRightLong className="popular--card__bottom--icon"
+                                      onClick={() => {
+                                          navigate("/issykKul/cholponAta")
+                                      }}/>
+                </div>
+                <div className="hotel--second__cards--card__icon">
+                    <AiFillHeart className="popular--card__icon--ai"/>
                 </div>
             </div>
+            <div className="popular--card">
+                <img src={balyk} alt=""/>
+                <div className="popular--card__bottom">
+                    <h2>Cholpon-Ata</h2>
+                    <div className="popular--card__bottom--center">
+                        <h3>4.5</h3>
+                        <div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <p>23 764 reviews</p>
+                    </div>
+                    <FaArrowRightLong className="popular--card__bottom--icon"
+                                      onClick={() => {
+                                          navigate("/issykKul/cholponAta")
+                                      }}/>
+                </div>
+                <div className="hotel--second__cards--card__icon">
+                    <AiFillHeart className="popular--card__icon--ai"/>
+                </div>
+            </div>
+
+
 
         </>
     );

@@ -7,6 +7,8 @@ import {RiCalendarEventLine} from "react-icons/ri";
 import Places from "./choose/html/places";
 import Hotels from "./choose/html/hotels";
 import Kitchen from "./choose/html/kitchen";
+import Event from "./choose/html/event";
+import Attraction from "./choose/html/attraction";
 const CholponAta = () => {
     const [active,setActive]=useState(true)
     const [active1,setActive1]=useState(false)
@@ -20,6 +22,10 @@ const CholponAta = () => {
             return <Hotels/>
         }else if(active2){
             return <Kitchen/>
+        }else if(active3){
+            return <Event/>
+        }else if(active4){
+            return <Attraction/>
         }
     }
     return (

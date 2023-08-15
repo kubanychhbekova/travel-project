@@ -12,6 +12,7 @@ import {Route, Routes} from "react-router-dom";
 import Hero from "./components/Hero";
 import IssytKyl from "./components/regions/issykKul/issytKyl";
 import CholponAta from "./components/regions/issykKul/cholponAta/cholponAta";
+import Gallery from "./components/gallery/gallery";
 
 function App() {
     return (
@@ -28,6 +29,7 @@ function App() {
                 <Route path="/currency" element={<Currency/>}/>
                 <Route path="/instrument" element={<InstrumentPage/>}/>
                 <Route path="/kitchen" element={<Kitchen/>}/>
+                <Route path="/gallery" element={<Gallery/>}/>
             </Routes>
             <Footer/>
         </div>

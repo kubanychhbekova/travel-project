@@ -16,8 +16,11 @@ import {BsSnow, BsTelephone, BsWifi} from "react-icons/bs";
 import {TbWashMachine} from "react-icons/tb";
 import {PiBatteryPlusVertical} from "react-icons/pi";
 import {HiOutlineOfficeBuilding} from "react-icons/hi";
+import Review from "../../../../../review/review";
 
 const Hotels = () => {
+
+
     return (
         <div className="hotel">
             <div className="hotel--first">
@@ -297,21 +300,7 @@ const Hotels = () => {
                     </div>
                 </div>
             </div>
-            <div className="hotel--fouth">
-                    <div className="hotel--fouth__left">
-                        <div className="hotel--fouth__left--top">
-                            <button>Write review</button>
-                            <button>Upload a photo</button>
-                        </div>
-                    </div>
-                    <div className="hotel--fouth__right">
-                        <div className="hotel--fouth__right--top">
-                            <input type="text" placeholder="Search"/>
-                            <button>Filter</button>
-                            <button>Sort by</button>
-                        </div>
-                    </div>
-                </div>
+           <Review/>
         </div>
     );
 };
