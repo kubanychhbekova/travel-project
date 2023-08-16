@@ -28,13 +28,10 @@ const Header = () => {
                         <h4 onClick={() => {
                             setModal(!modal)
                         }}>Regions</h4>
-                        <h4>Culture</h4>
-                        <h4>Gallery</h4>
-                        <NavLink to={'/routes'}><h4>Routes</h4></NavLink>
                       <NavLink to={"/culture"}>  <h4>Culture</h4></NavLink>
                      <NavLink to={"/gallery"}>   <h4>Gallery</h4></NavLink>
-                        <h4>Routes</h4>
-                    </div>
+                     <NavLink to={'/routes'}><h4>Routes</h4></NavLink>
+                     </div>
 
                     <div className="header--modal"
                          onClick={()=>{setModal(!modal)}}
