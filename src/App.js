@@ -12,6 +12,7 @@ import {Route, Routes} from "react-router-dom";
 import Hero from "./components/Hero";
 import IssytKyl from "./components/regions/issykKul/issytKyl";
 import CholponAta from "./components/regions/issykKul/cholponAta/cholponAta";
+import Routs from './components/routes/routes';
 import Gallery from "./components/gallery/gallery";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
                 <Route path={"/culture"} element={<Culture/>}/>
                 <Route path={"/issykKul"} element={<IssytKyl/>}/>
                 <Route path={"/issykKul/cholponAta"} element={<CholponAta/>}/>
+                <Route path={'/routes'} element={<Routs/>}/>
                 <Route path="/games" element={<GamesPage/>}/>
                 <Route path="/national" element={<NationalPage/>}/>
                 <Route path="/hand" element={<HandsPage/>}/>
