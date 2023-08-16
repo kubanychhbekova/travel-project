@@ -10,8 +10,11 @@ import batken from "../../../img/batken.png"
 import food from "../../../img/food.png"
 import food2 from "../../../img/food2.png"
 import temp from "../../../img/temp.png"
-import Popular from "../popular/popular";
 import Slider from "react-slick";
+import balyk from "../../../img/balyk.png";
+import {FaArrowRightLong} from "react-icons/fa6";
+import {AiFillHeart} from "react-icons/ai";
+import {useNavigate} from "react-router-dom";
 
 const IssykKyl = () =>{
     const settings = {
@@ -48,6 +51,7 @@ const IssykKyl = () =>{
             }
         ]
     };
+    const navigate=useNavigate()
     return (
         <div id="kul">
             <div className="container">
@@ -177,7 +181,225 @@ const IssykKyl = () =>{
                     <div className="kul--four">
                         <h1>Popular places</h1>
                         <div className="kul--four__cards">
-                            <Popular/>
+                            <div className="kul--four__cards--card">
+                                <img src={balyk} alt=""/>
+                                <div className="kul--four__cards--card__bottom">
+                                    <h2>Cholpon-Ata</h2>
+                                    <div className="kul--four__cards--card__bottom--center">
+                                        <h3>4.5</h3>
+                                        <div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <p>23 764 reviews</p>
+                                    </div>
+                                    <FaArrowRightLong className="kul--four__cards--card__bottom--icon"
+                                                      onClick={() => {
+                                                          navigate("/issykKul/cholponAta")
+                                                      }}/>
+                                </div>
+                                <div className="kul--four__cards--card__icon">
+                                    <AiFillHeart className="kul--four__cards--card__icon--ai"/>
+                                </div>
+                            </div>
+                            <div className="kul--four__cards--card">
+                                <img src={balyk} alt=""/>
+                                <div className="kul--four__cards--card__bottom">
+                                    <h2>Cholpon-Ata</h2>
+                                    <div className="kul--four__cards--card__bottom--center">
+                                        <h3>4.5</h3>
+                                        <div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <p>23 764 reviews</p>
+                                    </div>
+                                    <FaArrowRightLong className="kul--four__cards--card__bottom--icon"
+                                                      onClick={() => {
+                                                          navigate("/issykKul/cholponAta")
+                                                      }}/>
+                                </div>
+                                <div className="kul--four__cards--card__icon">
+                                    <AiFillHeart className="kul--four__cards--card__icon--ai"/>
+                                </div>
+                            </div>
+                            <div className="kul--four__cards--card">
+                                <img src={balyk} alt=""/>
+                                <div className="kul--four__cards--card__bottom">
+                                    <h2>Cholpon-Ata</h2>
+                                    <div className="kul--four__cards--card__bottom--center">
+                                        <h3>4.5</h3>
+                                        <div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <p>23 764 reviews</p>
+                                    </div>
+                                    <FaArrowRightLong className="kul--four__cards--card__bottom--icon"
+                                                      onClick={() => {
+                                                          navigate("/issykKul/cholponAta")
+                                                      }}/>
+                                </div>
+                                <div className="kul--four__cards--card__icon">
+                                    <AiFillHeart className="kul--four__cards--card__icon--ai"/>
+                                </div>
+                            </div>
+                            <div className="kul--four__cards--card">
+                                <img src={balyk} alt=""/>
+                                <div className="kul--four__cards--card__bottom">
+                                    <h2>Cholpon-Ata</h2>
+                                    <div className="kul--four__cards--card__bottom--center">
+                                        <h3>4.5</h3>
+                                        <div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <p>23 764 reviews</p>
+                                    </div>
+                                    <FaArrowRightLong className="kul--four__cards--card__bottom--icon"
+                                                      onClick={() => {
+                                                          navigate("/issykKul/cholponAta")
+                                                      }}/>
+                                </div>
+                                <div className="kul--four__cards--card__icon">
+                                    <AiFillHeart className="kul--four__cards--card__icon--ai"/>
+                                </div>
+                            </div>
+                            <div className="kul--four__cards--card">
+                                <img src={balyk} alt=""/>
+                                <div className="kul--four__cards--card__bottom">
+                                    <h2>Cholpon-Ata</h2>
+                                    <div className="kul--four__cards--card__bottom--center">
+                                        <h3>4.5</h3>
+                                        <div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <p>23 764 reviews</p>
+                                    </div>
+                                    <FaArrowRightLong className="kul--four__cards--card__bottom--icon"
+                                                      onClick={() => {
+                                                          navigate("/issykKul/cholponAta")
+                                                      }}/>
+                                </div>
+                                <div className="kul--four__cards--card__icon">
+                                    <AiFillHeart className="kul--four__cards--card__icon--ai"/>
+                                </div>
+                            </div>
+                            <div className="kul--four__cards--card">
+                                <img src={balyk} alt=""/>
+                                <div className="kul--four__cards--card__bottom">
+                                    <h2>Cholpon-Ata</h2>
+                                    <div className="kul--four__cards--card__bottom--center">
+                                        <h3>4.5</h3>
+                                        <div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <p>23 764 reviews</p>
+                                    </div>
+                                    <FaArrowRightLong className="kul--four__cards--card__bottom--icon"
+                                                      onClick={() => {
+                                                          navigate("/issykKul/cholponAta")
+                                                      }}/>
+                                </div>
+                                <div className="kul--four__cards--card__icon">
+                                    <AiFillHeart className="kul--four__cards--card__icon--ai"/>
+                                </div>
+                            </div>
+                            <div className="kul--four__cards--card">
+                                <img src={balyk} alt=""/>
+                                <div className="kul--four__cards--card__bottom">
+                                    <h2>Cholpon-Ata</h2>
+                                    <div className="kul--four__cards--card__bottom--center">
+                                        <h3>4.5</h3>
+                                        <div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <p>23 764 reviews</p>
+                                    </div>
+                                    <FaArrowRightLong className="kul--four__cards--card__bottom--icon"
+                                                      onClick={() => {
+                                                          navigate("/issykKul/cholponAta")
+                                                      }}/>
+                                </div>
+                                <div className="kul--four__cards--card__icon">
+                                    <AiFillHeart className="kul--four__cards--card__icon--ai"/>
+                                </div>
+                            </div>
+                            <div className="kul--four__cards--card">
+                                <img src={balyk} alt=""/>
+                                <div className="kul--four__cards--card__bottom">
+                                    <h2>Cholpon-Ata</h2>
+                                    <div className="kul--four__cards--card__bottom--center">
+                                        <h3>4.5</h3>
+                                        <div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <p>23 764 reviews</p>
+                                    </div>
+                                    <FaArrowRightLong className="kul--four__cards--card__bottom--icon"
+                                                      onClick={() => {
+                                                          navigate("/issykKul/cholponAta")
+                                                      }}/>
+                                </div>
+                                <div className="kul--four__cards--card__icon">
+                                    <AiFillHeart className="kul--four__cards--card__icon--ai"/>
+                                </div>
+                            </div>
+                            <div className="kul--four__cards--card">
+                                <img src={balyk} alt=""/>
+                                <div className="kul--four__cards--card__bottom">
+                                    <h2>Cholpon-Ata</h2>
+                                    <div className="kul--four__cards--card__bottom--center">
+                                        <h3>4.5</h3>
+                                        <div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <p>23 764 reviews</p>
+                                    </div>
+                                    <FaArrowRightLong className="kul--four__cards--card__bottom--icon"
+                                                      onClick={() => {
+                                                          navigate("/issykKul/cholponAta")
+                                                      }}/>
+                                </div>
+                                <div className="kul--four__cards--card__icon">
+                                    <AiFillHeart className="kul--four__cards--card__icon--ai"/>
+                                </div>
+                            </div>
+                            
+
+
                         </div>
                     </div>
                 </div>
