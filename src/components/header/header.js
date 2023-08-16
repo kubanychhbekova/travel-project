@@ -1,25 +1,44 @@
-import React, {useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import {NavLink} from "react-router-dom";
 
 const Header = () => {
     const [modal, setModal] = useState(false)
+    const modalRef = useRef(null);
+
+    useEffect(() => {
+        const handleOutsideClick = (event) => {
+            if (modalRef.current && !modalRef.current.contains(event.target)) {
+                setModal(false);
+            }
+        };
+
+        document.addEventListener('mousedown', handleOutsideClick);
+        return () => {
+            document.removeEventListener('mousedown', handleOutsideClick);
+        };
+    }, []);
     return (
         <div id="header">
             <div className="container">
                 <div className="header">
-                    <div className="header--logo"></div>
+                    <div className="header--logo">
+                    </div>
                     <div className="header--center">
-                        <h4>Home</h4>
+                 <NavLink to={"/"}><h4>Home</h4></NavLink>
                         <h4 onClick={() => {
                             setModal(!modal)
                         }}>Regions</h4>
                         <h4>Culture</h4>
                         <h4>Gallery</h4>
                         <NavLink to={'/routes'}><h4>Routes</h4></NavLink>
+                      <NavLink to={"/culture"}>  <h4>Culture</h4></NavLink>
+                     <NavLink to={"/gallery"}>   <h4>Gallery</h4></NavLink>
+                        <h4>Routes</h4>
                     </div>
 
                     <div className="header--modal"
                          onClick={()=>{setModal(!modal)}}
+                         ref={modalRef}
                     style={{
                         display:modal ? "block" : "none"
                     }}>

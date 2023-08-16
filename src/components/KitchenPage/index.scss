@@ -1,0 +1,160 @@
+#kitchen {
+    padding: 120px 0;
+    .container {
+        .kitchen {
+            &--page {
+                background: url("../../img/culture.png") no-repeat center/cover;
+                min-height: 30vh;
+                width: 100%;
+                margin: 32px 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                h1 {
+                    margin-left: 60px;
+                    color: #004A60;
+                    text-align: center;
+                    font-family: Abril Fatface, sans-serif;
+                    font-size: 64px;
+                    font-weight: 400;
+                }
+
+                p {
+                    margin-right: 120px;
+                    width: 814px;
+                    text-align: center;
+                    color: #000;
+                    font-family: Frank Ruhl Libre, sans-serif;
+                    font-size: 24px;
+                    font-weight: 500;
+                }
+            }
+
+            &--page1 {
+                display: flex;
+                align-items: start;
+                margin: 0 240px 100px 0;
+
+                &__imgs {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    margin-right: 27px;
+
+                    &--img1 {
+                        display: flex;
+                        margin: 17px 0;
+
+                        // img {
+                        //     margin: 0 5.5px;
+                        // }
+                    }
+                }
+
+                &__text {
+                    h1 {
+                        color: #242424;
+                        font-family: Montserrat, sans-serif;
+                        font-size: 24px;
+                        font-weight: 700;
+                        margin-bottom: 32px;
+                    }
+
+                    p {
+                        width: 687px;
+                        color: #242424;
+                        font-family: Montserrat, sans-serif;
+                        font-size: 20px;
+                        font-weight: 400;
+                    }
+                }
+            }
+
+            &--page2 {
+                display: flex;
+                align-items: start;
+                margin: 0 100px 100px 0;
+
+                img {
+                    margin-right: 27px
+                }
+
+                &__text {
+                    h1 {
+                        color: #242424;
+                        font-family: Montserrat, sans-serif;
+                        font-size: 24px;
+                        font-weight: 700;
+                        margin-bottom: 32px;
+                    }
+
+                    p {
+                        width: 672px;
+                        color: #242424;
+                        font-family: Montserrat, sans-serif;
+                        font-size: 20px;
+                        font-weight: 400;
+                    }
+
+                }
+            }
+            &--page3 {
+                display: flex;
+                align-items: start;
+                margin: 0 100px 100px 0;
+
+                img {
+                    margin-right: 27px
+                }
+
+                &__text {
+                    h1 {
+                        color: #242424;
+                        font-family: Montserrat, sans-serif;
+                        font-size: 24px;
+                        font-weight: 700;
+                        margin-bottom: 32px;
+                    }
+
+                    p {
+                        width: 662px;
+                        color: #242424;
+                        font-family: Montserrat, sans-serif;
+                        font-size: 20px;
+                        font-weight: 400;
+                    }
+
+                }
+            }
+            &--page4 {
+                display: flex;
+                align-items: start;
+                margin: 0 100px 100px 0;
+
+                img {
+                    margin-right: 27px
+                }
+
+                &__text {
+                    h1 {
+                        color: #242424;
+                        font-family: Montserrat, sans-serif;
+                        font-size: 24px;
+                        font-weight: 700;
+                        margin-bottom: 32px;
+                    }
+
+                    p {
+                        width: 662px;
+                        color: #242424;
+                        font-family: Montserrat, sans-serif;
+                        font-size: 20px;
+                        font-weight: 400;
+                    }
+
+                }
+            }
+        }
+    }
+}

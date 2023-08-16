@@ -1,10 +1,16 @@
 .popular{
+  display: flex;
+  align-items: start;
+  padding-top: 50px;
+  padding-bottom: 50px;
+justify-content: space-between;
   &--card{
     width: 340px;
     border-radius: 8px;
     background: #FFF;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
-    margin-bottom: -60px;
+    position: relative;
+    height: 400px;
     img {
       border-top-right-radius:8px ;
       border-top-left-radius: 8px;
@@ -67,5 +73,136 @@
         cursor: pointer;
       }
     }
+    &__icon {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      &--ai {
+        font-size: 26px;
+        color: deepskyblue;
+        padding: 8px;
+        background: white;
+        border-radius: 50%;
+      }
+    }
   }
+
 }
+.slick-slider {
+position: relative;
+  .slick-prev {
+    position: absolute;
+    border: none;
+    bottom: 15px;
+    left: 38%;
+    background: white;
+    color: transparent;
+  }
+  .slick-prev::after {
+    content: "<";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    width: 39%;
+    height: 100%;
+    background: white;
+    color: black;
+    text-align: center;
+
+    z-index: 1;
+  }
+
+  .slick-item {
+    max-width: 100%;
+  }
+  .slick-slide{
+    width: 340px !important;
+
+  }
+  .slick-list {
+    overflow: hidden;
+    width: 100%;
+
+    .slick-track {
+      display: flex;
+      width: 97% ;
+      gap: 40px;
+    }
+  }
+
+  .slick-next {
+    position: absolute;
+    border: none;
+    left: 56%;
+
+
+  }
+
+  .slick-next::after {
+    content: ">";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: white;
+    color: black;
+    text-align: center;
+    line-height: 40px;
+    z-index: 1;
+  }
+
+  .slick-dots {
+    display: flex !important;
+    width: 124px;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 10px;
+
+    .slick-active {
+      background: rgba(60, 95, 99, 1);
+      border-radius: 50%;
+
+      button {
+        color: rgba(229, 228, 233, 1);
+      }
+    }
+
+    li {
+      width: 38px;
+      height: 24px;
+      padding: 8px 15px 8px 15px;
+
+      text-align: center;
+
+      button {
+
+        color: #000;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+      }
+    }
+  }
+
+}
+
+
+
