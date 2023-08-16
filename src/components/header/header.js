@@ -15,7 +15,7 @@ const Header = () => {
                         }}>Regions</h4>
                         <h4>Culture</h4>
                         <h4>Gallery</h4>
-                        <h4>Routes</h4>
+                        <NavLink to={'/routes'}><h4>Routes</h4></NavLink>
                     </div>
 
                     <div className="header--modal"
