@@ -8,7 +8,7 @@ import Slider from "react-slick";
 
 const Popular = () => {
     const navigate = useNavigate()
-    const settings = {
+    const settings1 = {
         dots: true,
         infinite: false,
         speed: 500,
@@ -43,9 +43,8 @@ const Popular = () => {
         ]
     };
     return (
-        <>
-            <Slider {...settings}>
-
+        <div className="popular">
+            <Slider {...settings1}>
                 <div className="popular--card">
                     <img src={balyk} alt=""/>
                     <div className="popular--card__bottom">
@@ -262,12 +261,12 @@ const Popular = () => {
                         <AiFillHeart className="popular--card__icon--ai"/>
                     </div>
                 </div>
-
             </Slider>
 
 
 
-        </>
+
+        </div>
     );
 };
 
