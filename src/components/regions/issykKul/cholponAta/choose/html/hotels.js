@@ -19,8 +19,6 @@ import {HiOutlineOfficeBuilding} from "react-icons/hi";
 import Review from "../../../../../review/review";
 
 const Hotels = () => {
-
-
     return (
         <div className="hotel">
             <div className="hotel--first">

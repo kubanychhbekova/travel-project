@@ -71,14 +71,17 @@
         gap: 70px;
       }
     }
+
     h1 {
       @include h1;
       margin-bottom: 40px;
     }
+
     .slick-slider {
       position: relative;
-      width: 99.3%;
-      .slick-prev{
+      width: 100%;
+
+      .slick-prev {
         position: absolute;
         border: none;
         bottom: 15px;
@@ -87,6 +90,7 @@
         color: transparent;
         cursor: pointer;
       }
+
       .slick-prev::after {
         content: "<";
         position: absolute;
@@ -97,27 +101,31 @@
         display: block;
         width: 39%;
         height: 100%;
-        background:white;
+        background: white;
         color: black;
         text-align: center;
 
         z-index: 1;
       }
+
       .slick-list {
         overflow: hidden;
         width: 100%;
+
         .slick-track {
           display: flex;
-          width: 100%!important;
+          width: 100%;
         }
       }
-      .slick-next{
+
+      .slick-next {
         position: absolute;
         border: none;
         left: 56%;
-cursor: pointer;
+        cursor: pointer;
 
       }
+
       .slick-next::after {
         content: ">";
         position: absolute;
@@ -128,12 +136,13 @@ cursor: pointer;
         display: block;
         width: 100%;
         height: 100%;
-        background:white;
+        background: white;
         color: black;
         text-align: center;
         line-height: 40px;
         z-index: 1;
       }
+
       .slick-dots {
         display: flex !important;
         width: 124px;
@@ -141,19 +150,23 @@ cursor: pointer;
         align-items: center;
         list-style-type: none;
         gap: 10px;
-        .slick-active{
+
+        .slick-active {
           background: rgba(60, 95, 99, 1);
           border-radius: 50%;
-          button{
+
+          button {
             color: rgba(229, 228, 233, 1);
           }
         }
+
         li {
           width: 38px;
           height: 24px;
           padding: 8px 15px 8px 15px;
 
           text-align: center;
+
           button {
 
             color: #000;
@@ -170,13 +183,12 @@ cursor: pointer;
       }
     }
 
-
     &--third {
       margin-bottom: 125px;
       display: flex;
       align-items: start;
       padding-top: 50px;
-    gap: 20px;
+      gap: 20px;
 
 
       &__bottom {
@@ -184,6 +196,7 @@ cursor: pointer;
         justify-content: space-between;
         align-items: start;
         margin-bottom: 27px;
+
         &--left {
           h5 {
             text-align: start;
@@ -266,21 +279,24 @@ cursor: pointer;
         justify-content: space-between;
         flex-wrap: wrap;
         gap: 90px;
-        &--card{
+
+        &--card {
           width: 340px;
           border-radius: 8px;
           background: #FFF;
           box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
           margin-bottom: -60px;
           position: relative;
+
           img {
-            border-top-right-radius:8px ;
+            border-top-right-radius: 8px;
             border-top-left-radius: 8px;
           }
-          &__bottom{
+
+          &__bottom {
             padding: 10px 16px;
 
-            h2{
+            h2 {
               color: var(--h-2, #242424);
               text-align: start;
               font-family: Montserrat;
@@ -290,26 +306,31 @@ cursor: pointer;
               line-height: normal;
               margin-bottom: 5px
             }
-            &--center{
+
+            &--center {
               display: flex;
               align-items: center;
               width: 180px;
               margin-left: 0;
-              div{
+
+              div {
                 display: flex;
                 gap: 2px;
-                div{
-                  width:9px;
-                  height:9px;
+
+                div {
+                  width: 9px;
+                  height: 9px;
                   background: #3C5F63;
                   border-radius: 50%;
                 }
-                div:nth-child(5){
+
+                div:nth-child(5) {
                   background-color: transparent;
                   background-image: conic-gradient(at 50% 0%, white 50%, #3C5F63 0);
                   border-radius: 50%;
                   position: relative;
-                  &::before{
+
+                  &::before {
                     content: '';
                     height: 50%;
                     background-color: white;
@@ -320,7 +341,8 @@ cursor: pointer;
                 }
 
               }
-              p{
+
+              p {
                 color: var(--grey-text, #5A5A5A);
                 font-family: Montserrat;
                 font-size: 12px;
@@ -329,12 +351,14 @@ cursor: pointer;
                 line-height: 140%;
               }
             }
-            &--icon{
+
+            &--icon {
               font-size: 24px;
               margin-left: 280px;
               cursor: pointer;
             }
           }
+
           &__icon {
             position: absolute;
             top: 12px;

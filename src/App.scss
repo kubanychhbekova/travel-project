@@ -1,3 +1,5 @@
+@import "slick-carousel/slick/slick.scss";
+@import "slick-carousel/slick/slick-theme.scss";
 @import "components/header/style";
 @import "components/footer/style";
 @import "./components/Culture/index.scss";
@@ -20,6 +22,7 @@
 @import "components/regions/issykKul/cholponAta/choose/style/kitchen";
 @import "components/regions/issykKul/cholponAta/choose/style/event";
 @import "components/regions/issykKul/cholponAta/choose/style/attraction";
+
 @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;600;700;800&family=Inter:wght@100;200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@100;200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@100;200;300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
