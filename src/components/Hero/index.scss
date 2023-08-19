@@ -1,73 +1,99 @@
-#hero {
-  background: url("../Hero/img/image\ 989\ \(1\).png") no-repeat center/cover;
-  width: 100%;
-  height: 1017px;
-  flex-shrink: 0;
-  .container {
-    .hero {
-      &--link {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        &__title {
+  #hero {
+    background: url("../../img/image\ 989\ \(1\).png") no-repeat center/cover;
+    width: 100%;
+    height: 1017px;
+    flex-shrink: 0;
+
+    .container {
+      .hero {
+        position: relative;
+
+        &--link {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          &__title {
             margin-top: 160px;
-          h1 {
-            width: 916px;
-            color: #fff;
-            text-align: center;
-            font-family: Abril Fatface;
-            font-size: 80px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            text-align: center;
-          }
-          p {
-            width: 791px;
-            color: #fff;
-            text-align: center;
-            font-family: Frank Ruhl Libre;
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 140.023%; /* 33.605px */
-            letter-spacing: 1.2px;
-          }
-          &--input {
-            margin: 70px 0;
-            position: relative;
-            input {
-              display: inline-flex;
-              padding: 11px 475px 11px 22px;
-              align-items: center;
-              gap: 16px;
-              border-radius: 30px;
-              background: var(--bg-light-grey, #e5e4e9);
-              outline: none;
-            }
-            input::placeholder {
-                position: absolute;
-              color: #5a5a5a;
+
+            h1 {
+              width: 916px;
+              color: #fff;
               text-align: center;
-              font-family: Frank Ruhl Libre;
-              font-size: 24px;
-              font-style: normal;
+              font-family: Abril Fatface, sans-serif;
+              font-size: 80px;
               font-weight: 400;
-              line-height: 140.023%;
-              bottom: 2px;
-              left: 50px;
+              margin-left: 180px;
             }
-            &__luk {
-              position: absolute;
-              top: 10px;
-              color: #5a5a5a;
-              left: 15px;
-              width: 24px;
-              height: 24px;
+
+            p {
+              width: 791px;
+              color: #fff;
+              text-align: center;
+              font-family: Frank Ruhl Libre, sans-serif;
+              font-size: 24px;
+              font-weight: 500;
+              line-height: 140.023%;
+              /* 33.605px */
+              letter-spacing: 1.2px;
+              margin-left: 230px;
+            }
+
+            &--input {
+              margin: 70px 0 32px 250px;
+              position: relative;
+
+              svg {
+                margin-left: 5px;
+              }
+
+              input {
+                padding: 11px 455px 13px 52px;
+                align-items: center;
+                border-radius: 30px;
+                background: var(--bg-light-grey, #e5e4e9);
+                outline: none;
+                border: none;
+                font-size: 20px;
+
+              }
+
+              input::placeholder {
+                position: absolute;
+                color: #5a5a5a;
+                text-align: center;
+                font-family: Frank Ruhl Libre;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 140.023%;
+                bottom: 8px;
+                left: 50px;
+              }
+
+              &__luk {
+                position: absolute;
+                top: 10px;
+                color: #5a5a5a;
+                left: 15px;
+                width: 24px;
+                height: 24px;
+              }
+            }
+          }
+
+          &__icons {
+            margin: -250px 0 0 100px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            img {
+              cursor: pointer;
+              margin: 4px 0;
             }
           }
         }
       }
     }
   }
-}

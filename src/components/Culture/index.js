@@ -3,6 +3,7 @@ import { GrFormNextLink } from "react-icons/gr";
 import { Link } from "react-router-dom";
 
 const Culture = () => {
+
   return (
     <div id="culture">
       <div className="container">

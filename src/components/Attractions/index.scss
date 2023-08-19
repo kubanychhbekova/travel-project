@@ -1,0 +1,224 @@
+#attracitons {
+    .container {
+        .attracitons {
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            margin-left: 70px;
+
+            &--block1 {
+                margin: 100px 0 100px 0;
+                display: flex;
+                align-items: start;
+
+                img {
+                    margin-right: 24px;
+                }
+
+                &__text {
+                    margin-bottom: 20px;
+
+                    h1 {
+                        color: #004A60;
+                        font-family: Abril Fatface, sans-serif;
+                        font-size: 64px;
+                        font-weight: 400;
+                    }
+
+                    p {
+                        width: 789px;
+                        color: #242424;
+                        font-family: Frank Ruhl Libre, sans-serif;
+                        font-size: 24px;
+                        font-weight: 500;
+                        line-height: 140%;
+                        /* 33.6px */
+                        letter-spacing: 1.2px;
+                    }
+                }
+            }
+
+            &--block2 {
+                display: flex;
+                align-items: start;
+                flex-direction: column;
+                margin-right: 80px;
+
+                h2 {
+                    margin: 0 0 32px 1px;
+                    color: #004A60;
+                    font-family: Abril Fatface;
+                    font-size: 64px;
+                    font-weight: 400;
+                }
+
+                &__boxs {
+                    display: flex;
+                    align-items: start;
+                    margin-bottom: 32px;
+
+                    &--card {
+                        display: flex;
+                        align-items: start;
+                        flex-direction: column;
+                        width: 340px;
+                        height: 458px;
+                        border-radius: 8px;
+                        background: #FFF;
+                        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+
+
+                            h3 {
+                                color: var(--h-2, #242424);
+                                text-align: center;
+                                font-family: Montserrat, sans-serif;
+                                font-size: 14px;
+                                font-weight: 700;
+                                margin: 15px 0 5px 21px;
+                            }
+
+                        &__reiting {
+                            display: flex;
+                            align-items: center;
+                            margin: 0 0 11px 21px;
+
+                            h4 {
+                                color: #242424;
+                                font-family: Inter, sans-serif;
+                                font-size: 16px;
+                                font-weight: 700;
+                                line-height: 140%;
+                                margin-right: 6px;
+                                /* 22.4px */
+                            }
+
+                            &--icon {
+                                background: #004A60;
+                                width: 39px;
+                                height: 39px;
+
+                                border-radius: 50%;
+                                margin: -250px 0 0 80px;
+                            }
+
+
+                            &--krug {
+                                width: 8.442px;
+                                height: 8.97px;
+                                background: #3C5F63;
+                                border-radius: 50%;
+                                margin: 0 1.5px;
+                            }
+
+                            &--krug2 {
+                                width: 8.442px;
+                                height: 8.97px;
+                                background: linear-gradient(to right, #3C5F63 50%, transparent 50%);
+                                border-radius: 50%;
+                                margin: 0 1.5px;
+                                border: 1px solid #3C5F63;
+                            }
+
+                            span {
+                                color: var(--grey-text, #5A5A5A);
+                                font-family: Montserrat;
+                                font-size: 12px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 140%;
+                                margin-left: 6px;
+                            }
+                        }
+
+                        p {
+                            width: 302px;
+                            color: var(--h-2, #242424);
+                            font-family: Montserrat;
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            margin-left: 21px;
+                        }
+
+                        svg {
+                            font-size: 17px;
+                            margin: 7px 0 0 300px;
+                        }
+                    }
+
+                    &--card2 {
+                        display: flex;
+                        align-items: start;
+                        flex-direction: column;
+                        margin: 0 90px;
+                        width: 340px;
+                        height: 458px;
+                        border-radius: 8px;
+                        background: #FFF;
+                        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+
+                        h3 {
+                            color: var(--h-2, #242424);
+                            text-align: center;
+                            font-family: Montserrat, sans-serif;
+                            font-size: 14px;
+                            font-weight: 700;
+                            margin: 15px 0 5px 21px;
+                        }
+
+                        &__reiting {
+                            // display: flex;
+                            // // align-items: center;
+                            // // justify-content: space-around;
+                            margin: 0 0 11px 21px;
+
+                            h4 {
+                                color: #242424;
+                                font-family: Inter, sans-serif;
+                                font-size: 16px;
+                                font-weight: 700;
+                                line-height: 140%;
+                                margin-right: 6.33px;
+                                /* 22.4px */
+                            }
+
+                            &--krug {
+                                // width: 8.442px;
+                                // height: 8.97px;
+                                // background: #3C5F63;
+                                // border-radius: 50%;
+                                // margin: 0 1.5px;
+                            }
+
+                            span {
+                                color: var(--grey-text, #5A5A5A);
+                                font-family: Montserrat;
+                                font-size: 12px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 140%;
+                                margin-left: 16px;
+                            }
+                        }
+
+                        p {
+                            width: 302px;
+                            color: var(--h-2, #242424);
+                            font-family: Montserrat;
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+
+                        svg {
+                            font-size: 17px;
+                            margin: 7px 0 0 300px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

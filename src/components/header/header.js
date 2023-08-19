@@ -1,9 +1,14 @@
+import React, { useEffect, useRef, useState} from 'react';
+import {NavLink} from "react-router-dom";
 import React, {useEffect, useRef, useState} from 'react';
 import {NavLink, useNavigate} from "react-router-dom";
+
 
 const Header = () => {
     const [modal, setModal] = useState(false)
     const modalRef = useRef(null);
+    
+
 const navigate=useNavigate()
     useEffect(() => {
         const handleOutsideClick = (event) => {
@@ -17,6 +22,9 @@ const navigate=useNavigate()
             document.removeEventListener('mousedown', handleOutsideClick);
         };
     }, []);
+   
+
+
     return (
         <div id="header">
             <div className="container">
