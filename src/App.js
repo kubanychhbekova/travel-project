@@ -12,7 +12,13 @@ import {Route, Routes} from "react-router-dom";
 import Hero from "./components/Hero";
 import IssytKyl from "./components/regions/issykKul/issytKyl";
 import CholponAta from "./components/regions/issykKul/cholponAta/cholponAta";
+import Routs from './components/routes/routes';
 import Gallery from "./components/gallery/gallery";
+import SignUp from "./components/register/signup";
+import Login from "./components/register/login";
+import Forgot from "./components/register/forgot/forgot";
+import Digit from "./components/register/digit/digit";
+
 
 function App() {
     return (
@@ -23,6 +29,7 @@ function App() {
                 <Route path={"/culture"} element={<Culture/>}/>
                 <Route path={"/issykKul"} element={<IssytKyl/>}/>
                 <Route path={"/issykKul/cholponAta"} element={<CholponAta/>}/>
+                <Route path={'/routes'} element={<Routs/>}/>
                 <Route path="/games" element={<GamesPage/>}/>
                 <Route path="/national" element={<NationalPage/>}/>
                 <Route path="/hand" element={<HandsPage/>}/>
@@ -30,6 +37,10 @@ function App() {
                 <Route path="/instrument" element={<InstrumentPage/>}/>
                 <Route path="/kitchen" element={<Kitchen/>}/>
                 <Route path="/gallery" element={<Gallery/>}/>
+                <Route path="/signup" element={<SignUp/>}/>
+                <Route path="/login" element={<Login/>}/>
+                <Route path="/forgot" element={<Forgot/>}/>
+                <Route path="/digit" element={<Digit/>}/>
             </Routes>
             <Footer/>
         </div>

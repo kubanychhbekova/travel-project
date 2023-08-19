@@ -1,5 +1,7 @@
 import React, { useEffect, useRef, useState} from 'react';
 import {NavLink} from "react-router-dom";
+import React, {useEffect, useRef, useState} from 'react';
+import {NavLink, useNavigate} from "react-router-dom";
 
 
 const Header = () => {
@@ -7,6 +9,7 @@ const Header = () => {
     const modalRef = useRef(null);
     
 
+const navigate=useNavigate()
     useEffect(() => {
         const handleOutsideClick = (event) => {
             if (modalRef.current && !modalRef.current.contains(event.target)) {
@@ -35,8 +38,8 @@ const Header = () => {
                         }}>Regions</h4>
                       <NavLink to={"/culture"}>  <h4>Culture</h4></NavLink>
                      <NavLink to={"/gallery"}>   <h4>Gallery</h4></NavLink>
-                        <h4>Routes</h4>
-                    </div>
+                     <NavLink to={'/routes'}><h4>Routes</h4></NavLink>
+                     </div>
 
                     <div className="header--modal"
                          onClick={()=>{setModal(!modal)}}
@@ -61,7 +64,9 @@ const Header = () => {
                             <option value="arab">Arabic</option>
                         </select>
                         <div className="header--right__log">
-                            <button>Sign Up</button>
+                            <button onClick={()=>{
+                                navigate("signup")
+                            }}>Sign Up</button>
                         </div>
                     </div>
                 </div>

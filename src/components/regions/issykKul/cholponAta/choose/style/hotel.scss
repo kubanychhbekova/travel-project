@@ -14,6 +14,7 @@
   background: transparent;
   cursor: pointer;
 }
+
 .hotel {
   &--second {
     padding: 64px 0 100px 0;
@@ -110,20 +111,25 @@
           &--center {
             display: flex;
             align-items: center;
-            width: 239px;
             margin-left: 0;
             gap: 16px;
             margin-bottom: 11px;
 
+            p {
+              margin: 0;
+            }
+
             div {
               display: flex;
               gap: 4px;
+              margin: 0;
 
               div {
                 width: 21px;
                 height: 21px;
                 background: #3C5F63;
                 border-radius: 50%;
+                border:2px solid #3C5F63;
               }
 
               div:nth-child(5) {
@@ -155,6 +161,7 @@
       }
     }
   }
+
   &--third {
     h2 {
       color: var(--h-1, #004A60);
@@ -184,6 +191,7 @@
       align-items: start;
       padding: 45px 0;
       gap: 77px;
+
       &--left {
         margin-left: 0;
         width: 60%;
@@ -369,6 +377,7 @@
 
         &__fives {
           padding: 70px 0;
+
           h3 {
             color: #242424;
             font-family: Montserrat;
@@ -382,17 +391,21 @@
             display: flex;
             margin-top: 25px;
             gap: 25px;
+
             &__left {
               margin-left: 0;
+
               div {
                 display: flex;
                 gap: 15px;
                 align-items: center;
                 margin-bottom: 11px;
-                .icon{
+
+                .icon {
                   font-size: 24px;
                   margin: 0;
                 }
+
                 p {
                   color: #242424;
                   font-family: Montserrat;
@@ -404,17 +417,21 @@
                 }
               }
             }
+
             &__right {
               margin-left: 0;
+
               div {
                 display: flex;
                 gap: 15px;
                 align-items: center;
                 margin-bottom: 11px;
-                .icon{
+
+                .icon {
                   font-size: 24px;
                   margin: 0;
                 }
+
                 p {
                   color: #242424;
                   font-family: Montserrat;
@@ -430,12 +447,14 @@
         }
 
       }
-      &--right{
+
+      &--right {
         border-radius: 9.959px;
         background: #FFF;
         box-shadow: 0 0 15.934520721435547px 0 rgba(194, 198, 204, 0.60);
         padding: 35px 30px;
-        h2{
+
+        h2 {
           color: #242424;
           font-family: Montserrat;
           font-size: 21.91px;
@@ -443,13 +462,15 @@
           font-weight: 700;
           line-height: normal;
         }
-        .line{
+
+        .line {
           width: 323.67px;
           height: 0.996px;
           background: #E0E2E6;
           margin: 30px 0;
         }
-        p{
+
+        p {
           color: #9A9A9A;
           font-family: Montserrat;
           font-size: 15.935px;
@@ -458,9 +479,10 @@
           line-height: normal;
           margin-bottom: 5px;
         }
-        button{
+
+        button {
           border-radius: 8px;
-          background:  #004A60;
+          background: #004A60;
           color: #FFF;
           font-family: Montserrat;
           font-size: 14.939px;
@@ -472,20 +494,24 @@
           cursor: pointer;
           outline: none;
         }
-        &__bottom{
+
+        &__bottom {
           display: flex;
           align-items: center;
           gap: 22px;
-          div{
+
+          div {
             display: flex;
             align-items: center;
             gap: 5px;
             cursor: pointer;
-            .icon{
+
+            .icon {
               font-size: 21px;
 
             }
-            p{
+
+            p {
               color: #242424;
               font-family: Montserrat;
               font-size: 14.939px;
@@ -499,5 +525,5 @@
       }
     }
   }
-  }
+}
 

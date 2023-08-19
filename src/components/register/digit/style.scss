@@ -1,0 +1,81 @@
+@mixin button{
+  border-radius: 11.783px;
+  background: var(--h-1, #004A60);
+  width: 204px;
+  height: 60px;
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+#digit{
+  background: url("../../../img/register.png") no-repeat center/cover;
+  width: 100%;
+  height: 100%;
+  padding: 125px 0;
+  .digit{
+    &--card{
+      border-radius: 8px;
+      background: #FFF;
+      padding: 92px;
+      width: 472px;
+      height: 356px;
+      margin: 0;
+      h2{
+        color: #181818;
+        font-family: Montserrat;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-align: center;
+      }
+      p{
+        width: 430.084px;
+        text-align: center;
+        color: #868889;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin: 15px 0 42px 0;
+      }
+      &__number{
+        display: flex;
+        align-items: center;
+        input{
+          border-radius: 9.775px;
+          background: #F6F6F6;
+          border: none;
+          outline: none;
+          width: 89.601px;
+          height: 99.701px;
+          color: #181818;
+          font-family: Montserrat;
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+text-align: center;
+
+        }
+      }
+      &__button{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-top: 50px;
+        button{
+          @include button;
+        }
+      }
+    }
+  }
+}
