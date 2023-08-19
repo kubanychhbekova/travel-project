@@ -10,7 +10,12 @@
 @import "./components/InstrumentPage/index.scss";
 @import "./components/KitchenPage/index.scss";
 @import "./components/review/style";
-@import "./components/register/style";
+@import "components/register/signup/style";
+@import "components/register/login/style";
+@import "components/register/forgot/style";
+@import "components/register/digit/style";
+@import "components/register/style";
+@import "components/account/style";
 @import "./components/gallery/gallery";
 @import "../src/components/Hero/index.scss";
 @import "components/regions/issykKul/style";
@@ -22,10 +27,11 @@
 @import "components/regions/issykKul/cholponAta/choose/style/kitchen";
 @import "components/regions/issykKul/cholponAta/choose/style/event";
 @import "components/regions/issykKul/cholponAta/choose/style/attraction";
-
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@100;200;300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;600;700;800&family=Inter:wght@100;200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@100;200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@100;200;300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@100;200;300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap');
 * {
   margin: 0 auto;
   padding: 0;

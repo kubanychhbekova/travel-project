@@ -1,0 +1,96 @@
+@mixin btn{
+  border-radius: 8px;
+  background: var(--h-1, #004A60);
+  width: 572px;
+  height: 60px;
+  color: #FFF;
+  text-align: center;
+  font-family: Frank Ruhl Libre;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 50px;
+}
+#forgot{
+  background: url("../../../img/register.png") no-repeat center/cover;
+  padding: 175px 0 ;
+  width: 100%;
+  height:100%;
+
+
+  .forgot{
+    &--card{
+      border-radius: 8px;
+      background: #FFF;
+      padding: 40px 39px 0 39px;
+      width: 573px;
+      height: 474px;
+      margin: 0;
+      h1{
+        color: var(--h-1, #004A60);
+        font-family: Frank Ruhl Libre;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.44px;
+        text-align: center;
+
+      }
+
+      p{
+        color: #242424;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.6px;
+        margin: 36px 0 39px 0;
+        width: 482px;
+      }
+      &__inputs{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 18px;
+        margin-bottom: 18px;
+        input{
+          margin: 0;
+          border-radius: 8px;
+          border: 1px solid rgba(39, 49, 56, 0.51);
+          background: rgba(151, 153, 154, 0.08);
+          width: 556px;
+          height: 43px;
+          color: rgba(39, 49, 56, 0.51);
+          font-family: Montserrat;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          outline: none;
+          padding-left: 15px;
+        }
+      }
+      a{
+        color: #407EC7;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.6px;
+        text-decoration-line: underline;
+      }
+        button{
+          @include btn;
+        }
+
+      }
+    }
+
+}

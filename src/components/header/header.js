@@ -1,10 +1,10 @@
 import React, {useEffect, useRef, useState} from 'react';
-import {NavLink} from "react-router-dom";
+import {NavLink, useNavigate} from "react-router-dom";
 
 const Header = () => {
     const [modal, setModal] = useState(false)
     const modalRef = useRef(null);
-
+const navigate=useNavigate()
     useEffect(() => {
         const handleOutsideClick = (event) => {
             if (modalRef.current && !modalRef.current.contains(event.target)) {
@@ -56,7 +56,9 @@ const Header = () => {
                             <option value="arab">Arabic</option>
                         </select>
                         <div className="header--right__log">
-                            <button>Sign Up</button>
+                            <button onClick={()=>{
+                                navigate("signup")
+                            }}>Sign Up</button>
                         </div>
                     </div>
                 </div>

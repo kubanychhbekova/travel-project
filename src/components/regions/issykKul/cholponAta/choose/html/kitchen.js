@@ -1,7 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import img from "../../../../../../img/issykkul.png";
 import kitchen from "../../../../../../img/kitchen.png";
 import kitchen1 from "../../../../../../img/kitchen1.png";
+import kitchen2 from "../../../../../../img/kitchen2.png";
+import kitchen3 from "../../../../../../img/kitchen3.png";
+import kitchen4 from "../../../../../../img/kitchen4.png";
 import {AiOutlineHeart} from "react-icons/ai";
 import meat from "../../../../../../img/meat.png";
 import mini from "../../../../../../img/mini.png";
@@ -16,6 +19,58 @@ import Popular from "../../../../popular/popular";
 
 
 const Kitchen = () => {
+    const [handleKitchen,setHandleKitchen]=useState(1)
+    const kitchens = [
+        {
+            id: 1,
+            name: "Ethno-cafe Dastorkon",
+            rating: 4.5,
+            img: kitchen,
+            reviews: 13,
+            price: "5$-10$",
+            address: "107 Przhevalsky str., Karakol 722360 Kyrgyzstan",
+            tel: "+996 555 400 270",
+            title: "$$ - $$$, Russian, Canadian",
+
+        },
+        {
+            id: 2,
+            name: "Cafe Nomad",
+            rating: 3,
+            img: kitchen2,
+            reviews: 43,
+            price: "5$-10$",
+            address: "107 Przhevalsky str., Karakol 722360 Kyrgyzstan",
+            tel: "+996 555 400 270",
+            title: "$$ - $$$, Chinese, European, Asian",
+        },
+        {
+            id: 3,
+            name: "Stealth",
+            rating: 4,
+            img: kitchen3,
+            reviews: 26,
+            price: "5$-15$",
+            address: "107 Przhevalsky str., Karakol 722360 Kyrgyzstan",
+            tel: "+996 555 400 270",
+            title: "$$ - $$$, Asian",
+        },
+        {
+            id: 4,
+            name: "Cafe Zarina",
+            rating: 3.6,
+            img: kitchen4,
+            reviews: 26,
+            price: "5$-15$",
+            address: "107 Przhevalsky str., Karakol 722360 Kyrgyzstan",
+            tel: "+996 555 400 270",
+            title: "$$ - $$$, Bar, European, Asian, Oriental",
+        },
+    ]
+    const findHotel=kitchens.find((el)=>el.id===handleKitchen)
+    const fullCircles = Math.floor(findHotel.rating);
+    const hasHalfCircle = findHotel.rating - fullCircles >= 0.5;
+    const emptyCircles = 5 - Math.ceil(findHotel.rating);
     return (
         <div className="kitchen">
             <div className="kitchen--first">
@@ -25,95 +80,46 @@ const Kitchen = () => {
                 </div>
 
                 <div className="kitchen--first__cards">
-                    <div className="kitchen--first__cards--card">
-                        <img src={kitchen} alt=""/>
-                        <div className="kitchen--first__cards--card__icon">
-                            <AiOutlineHeart className="kitchen--first__cards--card__icon--ai"/>
-                        </div>
 
-                        <div className="kitchen--first__cards--card__bottom">
-                            <h2>Ethno-cafe Dastorkon</h2>
-                            <div className="kitchen--first__cards--card__bottom--center">
-                                <div>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                </div>
-                                <p>Reviews: 13</p>
-                            </div>
-                            <p>$$ - $$$, Chinese, European, Asian</p>
-                        </div>
-                    </div>
-                    <div className="kitchen--first__cards--card">
-                        <img src={kitchen} alt=""/>
-                        <div className="kitchen--first__cards--card__icon">
-                            <AiOutlineHeart className="kitchen--first__cards--card__icon--ai"/>
-                        </div>
+                    {
+                        kitchens.map((el)=>{
+                            const fullCircles = Math.floor(el.rating);
+                            const hasHalfCircle = el.rating - fullCircles >= 0.5;
+                            const emptyCircles = 5 - Math.ceil(el.rating);
+                            return(
+                                <div className="kitchen--first__cards--card" key={el.id} onClick={()=>{
+                                    setHandleKitchen(el.id)
+                                }}>
+                                    <img src={el.img} alt=""/>
+                                    <div className="kitchen--first__cards--card__icon">
+                                        <AiOutlineHeart className="kitchen--first__cards--card__icon--ai"/>
+                                    </div>
 
-                        <div className="kitchen--first__cards--card__bottom">
-                            <h2>Ethno-cafe Dastorkon</h2>
-                            <div className="kitchen--first__cards--card__bottom--center">
-                                <div>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
+                                    <div className="kitchen--first__cards--card__bottom">
+                                        <h2>{el.name}</h2>
+                                        <div className="kitchen--first__cards--card__bottom--center">
+                                            <div className="rating-circles">
+                                                {Array(fullCircles).fill().map((_, index) => (
+                                                    <div key={index} className="green-circle"></div>
+                                                ))}
+                                                {hasHalfCircle && <div className="half-circle"></div>}
+                                                {Array(emptyCircles).fill().map((_, index) => (
+                                                    <div key={index} className="empty-circle"></div>
+                                                ))}
+                                            </div>
+                                            <p>Reviews: {el.reviews}</p>
+                                        </div>
+                                        <p>{el.title}</p>
+                                    </div>
                                 </div>
-                                <p>Reviews: 13</p>
-                            </div>
-                            <p>$$ - $$$, Chinese, European, Asian</p>
-                        </div>
-                    </div>
-                    <div className="kitchen--first__cards--card">
-                        <img src={kitchen} alt=""/>
-                        <div className="kitchen--first__cards--card__icon">
-                            <AiOutlineHeart className="kitchen--first__cards--card__icon--ai"/>
-                        </div>
-
-                        <div className="kitchen--first__cards--card__bottom">
-                            <h2>Ethno-cafe Dastorkon</h2>
-                            <div className="kitchen--first__cards--card__bottom--center">
-                                <div>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                </div>
-                                <p>Reviews: 13</p>
-                            </div>
-                            <p>$$ - $$$, Chinese, European, Asian</p>
-                        </div>
-                    </div>
-                    <div className="kitchen--first__cards--card">
-                        <img src={kitchen} alt=""/>
-                        <div className="kitchen--first__cards--card__icon">
-                            <AiOutlineHeart className="kitchen--first__cards--card__icon--ai"/>
-                        </div>
-
-                        <div className="kitchen--first__cards--card__bottom">
-                            <h2>Ethno-cafe Dastorkon</h2>
-                            <div className="kitchen--first__cards--card__bottom--center">
-                                <div>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                </div>
-                                <p>Reviews: 13</p>
-                            </div>
-                            <p>$$ - $$$, Chinese, European, Asian</p>
-                        </div>
-                    </div>
+                            )
+                        })
+                    }
 
                 </div>
             </div>
             <div className="kitchen--second">
-                <h2>Hotel Altamira </h2>
+                <h2>{findHotel.name}</h2>
                 <div className="kitchen--second__image">
                     <img src={kitchen1} alt=""/>
                     <img src={meat} alt=""/>
@@ -123,17 +129,20 @@ const Kitchen = () => {
                     <div className="kitchen--second__bottom--left">
                         <h6>Ratings and reviews</h6>
                         <div className="kitchen--second__bottom--left__rating">
-                            <h3>4.5</h3>
-                            <div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
+                            <h3>{findHotel.rating}</h3>
+                            <div className="rating-circles">
+                                {Array(fullCircles).fill().map((_, index) => (
+                                    <div key={index} className="green-circle"></div>
+                                ))}
+                                {hasHalfCircle && <div className="half-circle"></div>}
+                                {Array(emptyCircles).fill().map((_, index) => (
+                                    <div key={index} className="empty-circle"></div>
+                                ))}
                             </div>
-                            <p>298 reviews</p>
+                            <p>{findHotel.reviews} reviews</p>
                         </div>
-                        <p className="kitchen--second__bottom--left__p"><span>№ 1 </span>of 23 Restaurants in Cholpon-Ata</p>
+                        <p className="kitchen--second__bottom--left__p"><span>№ 1 </span>of 23 Restaurants in
+                            Cholpon-Ata</p>
                         <div className="kitchen--second__bottom--left__line"></div>
                         <p className="kitchen--second__bottom--left__p2">ASSESSMENTS</p>
                         <div className="kitchen--second__bottom--left__icon">
@@ -191,10 +200,10 @@ const Kitchen = () => {
                     </div>
                     <div className="kitchen--second__bottom--center">
                         <h3>More detailed</h3>
-                       <div className="kitchen--second__bottom--center__first">
-                           <h2>PRICE RANGE</h2>
-                           <p>5 $ - 10 $</p>
-                       </div>
+                        <div className="kitchen--second__bottom--center__first">
+                            <h2>PRICE RANGE</h2>
+                            <p>5 $ - 10 $</p>
+                        </div>
                         <div className="kitchen--second__bottom--center__first ">
                             <h2>Specialized menu</h2>
                             <p>Подходит для вегетарианцев, Для веганов</p>
@@ -204,10 +213,10 @@ const Kitchen = () => {
                             <p>Breakfast, Lunch, Dinner, Brunch, Open Late,
                                 Drinks</p>
                         </div>
-                       <div className="kitchen--second__bottom--center__second">
-                           <h2>Show all information</h2>
-                           <p>services, description</p>
-                       </div>
+                        <div className="kitchen--second__bottom--center__second">
+                            <h2>Show all information</h2>
+                            <p>services, description</p>
+                        </div>
 
                     </div>
                     <div className="kitchen--second__bottom--right">
@@ -220,8 +229,7 @@ const Kitchen = () => {
                         <div className="kitchen--second__bottom--right__data">
                             <div className="kitchen--second__bottom--right__data--geo">
                                 <BsGeoAltFill className="icon"/>
-                                <p>107 Przhevalsky str., Karakol 722360
-                                    Kyrgyzstan</p>
+                                <p>{findHotel.address}</p>
                             </div>
                             <div className="kitchen--second__bottom--right__data--geo">
                                 <div>
@@ -237,16 +245,16 @@ const Kitchen = () => {
                             </div>
                             <div className="kitchen--second__bottom--right__data--geo">
                                 <BsTelephone className="icon"/>
-                                <p>+996 555 400 270</p>
+                                <p>{findHotel.tel}</p>
                             </div>
                             <h6>Edit this directory object</h6>
                         </div>
                     </div>
                 </div>
             </div>
-         <Review/>
+            <Review/>
             <h1>Popular places</h1>
-         <Popular/>
+            <Popular/>
         </div>
     );
 };

@@ -11,6 +11,7 @@ const Review = () => {
     const [photo, setPhoto] = useState(false)
     const [review, setReview] = useState(false)
     const [filter, setFilter] = useState(false)
+    const [replay, setReplay] = useState(false)
     const sms = [
         {
             id: 1,
@@ -138,7 +139,7 @@ const Review = () => {
                         {
                             sms.map((el) => {
                                 return (
-                                    <div className="reviews--review__right--bottom__card">
+                                    <div className="reviews--review__right--bottom__card" key={el.id}>
                                         <div className="reviews--review__right--bottom__card--top">
                                             <div className="reviews--review__right--bottom__card--top__data">
                                                 <img src={el.img} alt=""/>
@@ -173,7 +174,7 @@ const Review = () => {
                                                 {
                                                     el.photo.map((elem, ind) => {
                                                         return (
-                                                            <div key={el[ind]}>
+                                                            <div key={ind}>
                                                                 <img src={elem} alt=""/>
                                                             </div>
                                                         )
@@ -181,7 +182,11 @@ const Review = () => {
                                                 }
                                             </div>
                                         }
-                                        <p className="reviews--review__right--bottom__card--p">Reply</p>
+                                        <p className="reviews--review__right--bottom__card--p"
+                                        onClick={()=>{
+                                            setReplay(!replay)
+                                        }}
+                                        >Reply</p>
                                     </div>
                                 )
                             })
@@ -321,6 +326,18 @@ const Review = () => {
                     <h6>Throw off</h6>
                     <button>Apply</button>
                 </div>
+            </div>
+            <div className="reviews--replayModal" style={{
+                display:replay? "block" : "none"
+            }}>
+                <RxCross2 className="reviews--replayModal__icon" onClick={() => {
+                    setReplay(false)
+                }}/>
+                <p>Response to user @Anna Petrova</p>
+                <textarea placeholder="Tell us about your experience">
+
+                </textarea>
+                <button>Send</button>
             </div>
         </div>
     );

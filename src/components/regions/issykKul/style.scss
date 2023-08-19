@@ -78,34 +78,28 @@
     }
 
     .slick-slider {
-      position: relative;
       width: 100%;
+      height: 400px;
 
       .slick-prev {
         position: absolute;
         border: none;
-        bottom: 15px;
-        left: 38%;
-        background: white;
-        color: transparent;
-        cursor: pointer;
-      }
-
-      .slick-prev::after {
-        content: "<";
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        font-size: 20px;
-        font-weight: 600;
-        display: block;
-        width: 39%;
-        height: 100%;
-        background: white;
+        top: 90%;
+        left: 41%;
+        border-radius: 50%;
+        background: black;
         color: black;
-        text-align: center;
+        cursor: pointer;
 
-        z-index: 1;
+        &::before {
+          opacity: 1;
+          font-size: 25px;
+          margin-left: -2.7px;
+          margin-bottom: 3px;
+          font-weight: 400;
+
+        }
+
       }
 
       .slick-list {
@@ -121,35 +115,29 @@
       .slick-next {
         position: absolute;
         border: none;
-        left: 56%;
+        right: 42%;
+        top: 90%;
+        border-radius: 50%;
+        background: black;
+        color: black;
         cursor: pointer;
 
-      }
+        &::before {
+          opacity: 1;
+          font-size: 25px;
+          margin-left: -2.7px;
+          margin-bottom: 3px;
+          font-weight: 400;
 
-      .slick-next::after {
-        content: ">";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        font-size: 20px;
-        font-weight: 600;
-        display: block;
-        width: 100%;
-        height: 100%;
-        background: white;
-        color: black;
-        text-align: center;
-        line-height: 40px;
-        z-index: 1;
+        }
       }
 
       .slick-dots {
-        display: flex !important;
-        width: 124px;
-        justify-content: center;
-        align-items: center;
-        list-style-type: none;
         gap: 10px;
+        justify-content: center;
+        bottom: 5%;
+        width: 144px;
+        left: 44%;
 
         .slick-active {
           background: rgba(60, 95, 99, 1);
@@ -161,14 +149,18 @@
         }
 
         li {
+
+          list-style-type: none;
           width: 38px;
-          height: 24px;
-          padding: 8px 15px 8px 15px;
+          height: 38px;
+
 
           text-align: center;
 
           button {
-
+            display: flex;
+            align-items: start;
+            justify-content: center;
             color: #000;
             font-family: Inter;
             font-size: 20px;
@@ -178,6 +170,10 @@
             border: none;
             background: transparent;
             cursor: pointer;
+
+            &::before {
+              opacity: 0;
+            }
           }
         }
       }
