@@ -1,0 +1,33 @@
+#homeblock {
+    background: url("../../img/homebg.png") no-repeat center/cover;
+    min-height: 40vh;
+    margin-top: -270px;
+
+    .container {
+        .homeblock {
+            display: flex;
+            align-items: start;
+
+            h1 {
+                margin: 33px 83px 100px 0;
+                color: #FFF;
+                text-align: center;
+                font-family: Abril Fatface, sans-serif;
+                font-size: 64px;
+                font-weight: 400;
+            }
+
+            p {
+                margin-top: 33px;
+                width: 798px;
+                color: #242424;
+                font-family: Frank Ruhl Libre, sans-serif;
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 140%;
+                /* 33.6px */
+                letter-spacing: 1.2px;
+            }
+        }
+    }
+}

@@ -1,0 +1,282 @@
+#homeSlider {
+    background: url("../../img/cultureblur.png") no-repeat center/cover;
+    min-height: 100vh;
+    // background: rgba(255, 255, 255, 0.60);
+    backdrop-filter: blur(7.5px);
+
+    .container {
+        .homeSlider {
+            position: relative;
+            display: flex;
+            align-items: center;
+            // width: 100%;
+
+
+            &--block {
+                display: flex !important;
+                align-items: center;
+                margin: 0 100px !important;
+                margin-left: 70px;
+
+                .slick-dots {
+                    position: absolute;
+                    bottom: -55px;
+                    right: 355px;
+                    display: block;
+                    width: 100%;
+                    padding: 0;
+                    margin: 0;
+                    list-style: none;
+                    text-align: center;
+                }
+
+
+                img {
+                    margin: 103px 19px 0 -550px;
+                }
+
+                &__card {
+                    margin-top: 103px;
+                    width: 373px;
+                    height: 546px;
+                    border-radius: 5px;
+                    background: #FFF;
+                    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+
+                    h1 {
+                        color: var(--h-1, #004A60);
+                        font-family: Abril Fatface, sans-serif;
+                        font-size: 24px;
+                        font-weight: 400;
+                        letter-spacing: 1.2px;
+                        margin: 25px 0 32px 23px;
+                    }
+
+                    p {
+                        width: 327px;
+                        color: #242424;
+                        font-family: Frank Ruhl Libre;
+                        font-size: 16px;
+                        font-weight: 400;
+                        letter-spacing: 0.8px;
+                    }
+
+                    &--btn {
+                        display: flex;
+                        width: 150px;
+                        height: 45px;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 8px;
+                        background: var(--dark-green, #3C5F63);
+                        margin: 100px 23px 23px 197px;
+                        margin-bottom: 0;
+
+                        h2 {
+                            color: var(--bg-light-grey, #E5E4E9);
+                            font-family: Montserrat;
+                            text-align: center;
+                            font-weight: 500;
+                            font-size: 20px;
+                        }
+
+                        svg {
+                            font-size: 30px;
+                            color: white;
+                        }
+                    }
+
+                }
+            }
+
+            &--block2 {
+                display: flex !important;
+                align-items: center;
+                margin: 0 100px !important;
+
+                img {
+                    margin: 103px 19px 0 -550px;
+                }
+
+                &__card2 {
+                    margin-top: 103px;
+                    width: 373px;
+                    height: 546px;
+                    border-radius: 5px;
+                    background: #FFF;
+                    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+
+                    h1 {
+                        color: var(--h-1, #004A60);
+                        font-family: Abril Fatface, sans-serif;
+                        font-size: 24px;
+                        font-weight: 400;
+                        letter-spacing: 1.2px;
+                        margin: 25px 0 32px 23px;
+                    }
+
+                    p {
+                        width: 327px;
+                        color: #242424;
+                        font-family: Frank Ruhl Libre;
+                        font-size: 16px;
+                        font-weight: 400;
+                        letter-spacing: 0.8px;
+                    }
+
+                    &--btn2 {
+                        display: flex;
+                        width: 150px;
+                        height: 45px;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 8px;
+                        background: var(--dark-green, #3C5F63);
+                        margin: 30px 23px 23px 197px;
+
+                        h2 {
+                            color: var(--bg-light-grey, #E5E4E9);
+                            font-family: Montserrat;
+                            text-align: center;
+                            font-weight: 500;
+                            font-size: 20px;
+                        }
+
+                        svg {
+                            font-size: 30px;
+                            color: white;
+                        }
+                    }
+
+                }
+
+            }
+
+            &--block3 {
+                display: flex !important;
+                align-items: center;
+                margin: 0 100px !important;
+
+                img {
+                    margin: 103px 19px 0 -550px;
+                }
+
+                &__card3 {
+                    margin-top: 103px;
+                    width: 373px;
+                    height: 546px;
+                    border-radius: 5px;
+                    background: #FFF;
+                    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+
+                    h1 {
+                        color: var(--h-1, #004A60);
+                        font-family: Abril Fatface, sans-serif;
+                        font-size: 24px;
+                        font-weight: 400;
+                        letter-spacing: 1.2px;
+                        margin: 25px 0 32px 23px;
+                    }
+
+                    p {
+                        width: 327px;
+                        color: #242424;
+                        font-family: Frank Ruhl Libre;
+                        font-size: 16px;
+                        font-weight: 400;
+                        letter-spacing: 0.8px;
+                    }
+
+                    &--btn3 {
+                        display: flex;
+                        width: 150px;
+                        height: 45px;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 8px;
+                        background: var(--dark-green, #3C5F63);
+                        margin: 178px 23px 23px 197px;
+
+                        h2 {
+                            color: var(--bg-light-grey, #E5E4E9);
+                            font-family: Montserrat;
+                            text-align: center;
+                            font-weight: 500;
+                            font-size: 20px;
+                        }
+
+                        svg {
+                            font-size: 30px;
+                            color: white;
+                        }
+                    }
+
+                }
+
+            }
+
+            &--block4 {
+                display: flex !important;
+                align-items: center;
+                margin: 0 100px !important;
+
+                img {
+                    margin: 103px 19px 0 -550px;
+                }
+
+                &__card4 {
+                    margin-top: 103px;
+                    width: 373px;
+                    height: 546px;
+                    border-radius: 5px;
+                    background: #FFF;
+                    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+
+                    h1 {
+                        color: var(--h-1, #004A60);
+                        font-family: Abril Fatface, sans-serif;
+                        font-size: 24px;
+                        font-weight: 400;
+                        letter-spacing: 1.2px;
+                        margin: 25px 0 32px 23px;
+                    }
+
+                    p {
+                        width: 327px;
+                        color: #242424;
+                        font-family: Frank Ruhl Libre;
+                        font-size: 16px;
+                        font-weight: 400;
+                        letter-spacing: 0.8px;
+                    }
+
+                    &--btn4 {
+                        display: flex;
+                        width: 150px;
+                        height: 45px;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 8px;
+                        background: var(--dark-green, #3C5F63);
+                        margin: 175px 23px 23px 197px;
+
+                        h2 {
+                            color: var(--bg-light-grey, #E5E4E9);
+                            font-family: Montserrat;
+                            text-align: center;
+                            font-weight: 500;
+                            font-size: 20px;
+                        }
+
+                        svg {
+                            font-size: 30px;
+                            color: white;
+                        }
+                    }
+
+                }
+
+            }
+        }
+    }
+}

@@ -1,9 +1,11 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, { useEffect, useRef, useState} from 'react';
 import {NavLink} from "react-router-dom";
+
 
 const Header = () => {
     const [modal, setModal] = useState(false)
     const modalRef = useRef(null);
+    
 
     useEffect(() => {
         const handleOutsideClick = (event) => {
@@ -17,6 +19,9 @@ const Header = () => {
             document.removeEventListener('mousedown', handleOutsideClick);
         };
     }, []);
+   
+
+
     return (
         <div id="header">
             <div className="container">
