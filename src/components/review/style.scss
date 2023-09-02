@@ -169,9 +169,10 @@
         display: flex;
         align-items: center;
         gap: 148px;
+        position: relative;
 
         input {
-          padding: 11px 255px 11px 17px;
+          padding: 11px 201px 11px 80px;
           border-radius: 41px;
           background: #E5E4E9;
           color: #5A5A5A;
@@ -182,6 +183,13 @@
           line-height: normal;
           border: none;
           outline: none;
+        }
+
+        &__icon {
+          position: absolute;
+          left: 33px;
+          font-size: 24px;
+          color: #5A5A5A;
         }
 
         button {

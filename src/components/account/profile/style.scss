@@ -1,0 +1,286 @@
+@mixin btn {
+  border-radius: 8px;
+  background: var(--h-1, #004A60);
+  width: 556px;
+  height: 60px;
+  color: #FFF;
+  text-align: center;
+  font-family: Frank Ruhl Libre;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  outline: none;
+  border: none;
+  margin: 33px 0 28px 0;
+  cursor: pointer;
+}
+
+.profile {
+  &--top {
+    background: url("../../../img/profile.png") no-repeat center/cover;
+    width: 955px;
+    height: 199px;
+    margin: 0;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 74, 96, 1);
+    border-bottom: 53px solid rgba(0, 74, 96, 1);
+
+    &__edit {
+      color: #004A60;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      width: 139px;
+      height: 18px;
+      padding: 4px 0;
+      border-radius: 10px;
+      margin-top: 12px;
+      margin-right: 12px;
+      cursor: pointer;
+      text-align: center;
+      background: white;
+    }
+
+    &__user {
+      margin: 60px 0 0 8px;
+      display: flex;
+      align-items: end;
+      gap: 10px;
+
+      &--img {
+        margin: 0;
+        position: relative;
+        cursor: pointer;
+input{
+  position: absolute;
+  width: 121px;
+  height: 121px;
+  top: 10px;
+  opacity: 0;
+  right: 0;
+}
+        img{
+          width: 121px;
+          height: 121px;
+          border-radius: 50%;
+        }
+        div {
+          background: linear-gradient(to bottom, #87cefa, #007bff);
+          border-radius: 50%;
+          width: 121px;
+          height: 121px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          p {
+            font-size: 76px;
+            font-weight: 600;
+            color: white;
+            font-family: Roboto;
+          }
+        }
+
+        .icon {
+          position: absolute;
+          font-size: 24px;
+          color: white;
+          bottom: 0;
+          right: 8px;
+        }
+      }
+
+      &--title {
+        margin: 0;
+
+        h1 {
+          color: #FDFFFF;
+          font-family: Abril Fatface;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+
+        p {
+          color: #FFFCFC;
+          font-family: Montserrat;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 140%;
+        }
+      }
+    }
+  }
+&--modal{
+  position: fixed  ;
+  background:white;
+  border-radius: 12px;
+  padding: 40px;
+  top: 35%;
+ &__div{
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+   input {
+     border-radius: 8px;
+     border: 1px solid rgba(39, 49, 56, 0.51);
+     background: rgba(151, 153, 154, 0.08);
+     color: rgba(39, 49, 56, 0.51);
+     font-family: Montserrat;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+     padding: 16px 0 16px 16px;
+     width: 556px;
+   }
+ &--btn{
+   display: flex;
+   align-items: center;
+   gap: 20px;
+   button{
+     @include btn;
+     width: 276px;
+     margin: 0;
+
+   }
+ }
+ }
+
+
+}
+  &--card {
+    border-radius: 8px;
+    background: #FFF;
+    width: 573px;
+    margin: 0;
+
+    .error {
+      width: 100%;
+      color: #ff0000;
+      white-space: pre-wrap;
+
+      p {
+        color: #ff0000;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: start;
+        margin-top: -10px;
+      }
+    }
+
+    h1 {
+      color: #004A60;
+      font-family: Montserrat;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      padding: 34px 0 26px 0;
+    }
+
+    &__inputs {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      gap: 18px;
+
+      input {
+        margin: 0;
+        border-radius: 8px;
+        border: 1px solid rgba(39, 49, 56, 0.51);
+        background: rgba(151, 153, 154, 0.08);
+        width: 556px;
+        height: 43px;
+        color: rgba(39, 49, 56, 0.51);
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        outline: none;
+        padding-left: 15px;
+      }
+
+    }
+
+    &__data {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 17px;
+      margin: 37px 0 28px 0;
+
+      div {
+        p {
+          color: #273138;
+          font-family: Montserrat;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          margin-bottom: 8px;
+          text-align: start;
+
+          span {
+            color: red;
+          }
+        }
+
+        input {
+          width: 267px;
+          height: 43px;
+          padding-left: 9px;
+          border-radius: 8px;
+          outline: none;
+          border: 1px solid rgba(39, 49, 56, 0.51);
+          background: rgba(151, 153, 154, 0.08);
+          color: rgba(39, 49, 56, 0.51);
+          font-family: Montserrat;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          text-decoration-line: underline;
+        }
+
+
+      }
+    }
+
+    button {
+      @include btn;
+    }
+
+    p {
+      color: #868889;
+      font-family: Montserrat;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      letter-spacing: 0.6px;
+      text-align: center;
+
+      a {
+        color: #407EC7;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.6px;
+        cursor: pointer;
+      }
+    }
+  }
+}

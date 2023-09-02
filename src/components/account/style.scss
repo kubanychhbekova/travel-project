@@ -1,7 +1,201 @@
-#account{
-  .account{
-    &--left{
-      background: url("../../img/accountleft.png");
+#account {
+  .container {
+    width: 90%;
+
+    .account {
+      display: flex;
+      gap: 62px;
+      &--left {
+        background: url("../../img/accountleft.png") no-repeat center/cover;
+        width: 19%;
+        margin: 0;
+        background-size: contain;
+        padding: 200px 22px 377px 22px;
+
+        &__pages {
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+          padding: 0 29px 238px 22px;
+          .active {
+            padding: 8px 0 8px 16px;
+            margin-right: 0;
+            margin-left: 0;
+            border-radius: 8px;
+            background: #FFFBFB;
+
+            .icon {
+              font-size: 20px;
+              color: #004A60;
+              margin: 0;
+            }
+
+            p {
+              color: #004A60;
+
+            }
+          }
+
+          &--page {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding-left: 16px;
+            margin-right: 0;
+            margin-left: 0;
+            cursor: pointer;
+
+            .icon {
+              font-size: 20px;
+              color: white;
+              margin: 0;
+            }
+
+            p {
+              margin: 0;
+              color: white;
+              font-family: Montserrat;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+              letter-spacing: -0.1px;
+            }
+          }
+        }
+
+        &__log {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          cursor: pointer;
+          margin-left: 40px;
+          .icon {
+            font-size: 20px;
+            color: white;
+            margin: 0;
+          }
+
+          p {
+            margin: 0;
+            color: white;
+            font-family: Montserrat;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: -0.1px;
+          }
+        }
+      }
+
+      &--right {
+        margin: 0;
+        width: 69.4%;
+        &__header {
+          display: flex;
+          align-items: start;
+          justify-content: space-between;
+          padding: 30px 0 20px 0;
+          &--input {
+            display: flex;
+            margin-left: 0;
+            gap: 15px;
+           &__write{
+             position: relative;
+             display: flex;
+             align-items: center;
+             input {
+               height: 42px;
+               width: 300px;
+               padding: 0 350px 0 50px;
+               align-items: center;
+               gap: 16px;
+               border-radius: 30px;
+               background: var(--bg-light-grey, #E5E4E9);
+               outline: none;
+               border: none;
+               color: #5A5A5A;
+               font-family: Inter;
+               font-size: 20px;
+               font-style: normal;
+               font-weight: 500;
+               line-height: normal;
+             }
+
+             .icon {
+               position: absolute;
+               left: 20px;
+               font-size: 24px;
+               color: #5A5A5A;
+             }
+           }
+
+            &__search {
+              width: 42px;
+              height: 42px;
+              border-radius: 50%;
+              background: #004A60;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              cursor: pointer;
+              &--icon {
+                font-family: Montserrat;
+                font-size: 35px;
+                color: white;
+
+              }
+            }
+          }
+
+          &--user {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-right: 0;
+            &__title {
+              h1 {
+                color: #004A60;
+                font-family: Abril Fatface;
+                font-size: 17px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                text-align: end;
+              }
+
+              p {
+                color: #004A60;
+                font-family: Montserrat;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 140%;
+                text-align: end;
+              }
+            }
+
+            &__img {
+              div {
+                background: linear-gradient(to bottom, #87cefa, #007bff);
+                border-radius: 50%;
+                width: 42px;
+                height: 42px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                p {
+                  font-size: 22px;
+                  font-weight: 500;
+                  color: white;
+                  font-family: Roboto;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

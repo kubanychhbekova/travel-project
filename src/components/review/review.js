@@ -6,6 +6,7 @@ import comment from "../../img/coment.png"
 import comment2 from "../../img/comment2.png"
 import {AiOutlineLike} from "react-icons/ai";
 import {MdKeyboardArrowLeft, MdKeyboardArrowRight} from "react-icons/md";
+import {RiSearch2Line} from "react-icons/ri";
 
 const Review = () => {
     const [photo, setPhoto] = useState(false)
@@ -131,6 +132,7 @@ const Review = () => {
                 <div className="reviews--review__right">
                     <div className="reviews--review__right--top">
                         <input type="text" placeholder="Search"/>
+                        <RiSearch2Line className="reviews--review__right--top__icon"/>
                         <button onClick={()=>{
                             setFilter(!filter)
                         }}>Filter</button>

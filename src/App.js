@@ -18,12 +18,14 @@ import SignUp from "./components/register/signup";
 import Login from "./components/register/login";
 import Forgot from "./components/register/forgot/forgot";
 import Digit from "./components/register/digit/digit";
-
+import Account from "./components/account";
+ 
 
 function App() {
     return (
         <div className="App">
             <Header/>
+
             <Routes>
                 <Route path={"/"} element={<Hero/>}/>
                 <Route path={"/culture"} element={<Culture/>}/>
@@ -41,6 +43,7 @@ function App() {
                 <Route path="/login" element={<Login/>}/>
                 <Route path="/forgot" element={<Forgot/>}/>
                 <Route path="/digit" element={<Digit/>}/>
+                <Route path="/account" element={<Account/>}/>
             </Routes>
             <Footer/>
         </div>
