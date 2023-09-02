@@ -2,11 +2,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-padding: 120px 0;
+    padding: 120px 0;
+
     .container {
         margin-top: 20px;
         background: url("../../img/Culturebg.png") no-repeat center/cover;
         min-height: 100vh;
+        background-size: contain;
 
         .culture {
             &--block {
@@ -15,7 +17,7 @@ padding: 120px 0;
                 flex-direction: column;
                 align-items: center;
                 width: 410px;
-                height: 547px;
+                height: 567px;
                 border-radius: 5px;
                 background: #FFF;
                 box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
@@ -40,128 +42,142 @@ padding: 120px 0;
                 }
 
                 &__box {
+                    // display: flex;
+                    // /* Устанавливаем вертикальное направление */
+                    // align-items: center;
+
                     &--game1 {
                         display: flex;
-                        justify-content: flex-start;
-                        margin-left: 10px;
+                        align-items: center;
 
-                        h3 {
-                            margin-right: 222px;
-                            color: var(--h-1, #004A60);
-                            text-align: center;
-                            font-family: Frank Ruhl Libre, sans-serif;
-                            font-size: 14px;
-                            font-weight: 700;
+                        &__text {
+                            width: 140px;
+                            display: flex;
+                            align-items: start !important;
+                            flex-direction: column;
+                            margin-right: 50px;
+
+                            h3 {
+                                color: var(--h-1, #004A60);
+                                // text-align: center;
+                                font-family: Frank Ruhl Libre, sans-serif;
+                                font-size: 14px;
+                                font-weight: 700;
+
+                            }
                         }
 
-                        svg {
-                            cursor: pointer;
-                            font-size: 20px;
+                        &__icon {
+                            width: 100px;
+                            display: flex;
+                            align-items: start;
+                            flex-direction: column;
+
+                            svg {
+                                cursor: pointer;
+                                font-size: 20px;
+                                margin-left: 10px;
+                            }
+
                         }
+
+
                     }
 
-                    &--game2 {
-                        display: flex;
-                        justify-content: flex-start;
-                        margin: 9px 0 9px 10px;
+                }
+            }
+        }
 
-                        h3 {
-                            margin-right: 158px;
-                            color: var(--h-1, #004A60);
-                            text-align: center;
-                            font-family: Frank Ruhl Libre, sans-serif;
-                            font-size: 14px;
-                            font-weight: 700;
-                        }
+    }
+}
 
-                        svg {
-                            cursor: pointer;
-                            font-size: 20px;
-                        }
+
+@media (max-width:1200px) {
+    #culture {
+        .container {
+            .culture {
+                &--block {
+                    width: 323px;
+                    height: 428px;
+
+                    h1 {
+                        font-size: 38px;
                     }
 
-                    &--game3 {
-                        display: flex;
-                        justify-content: flex-start;
-                        margin-left: 10px;
-
-                        h3 {
-                            margin-right: 188px;
-                            color: var(--h-1, #004A60);
-                            text-align: center;
-                            font-family: Frank Ruhl Libre, sans-serif;
-                            font-size: 14px;
-                            font-weight: 700;
-                        }
-
-                        svg {
-                            cursor: pointer;
-                            font-size: 20px;
-                        }
+                    p {
+                        width: 294px;
+                        font-size: 12px;
+                        margin-bottom: 20px;
                     }
 
-                    &--game4 {
-                        display: flex;
-                        justify-content: flex-start;
-                        margin: 9px 0 9px 10px;
+                    &__box {
+                        &--game1 {
+                            h3 {
+                                font-size: 12px;
+                            }
 
-                        h3 {
-                            margin-right: 205px;
-                            color: var(--h-1, #004A60);
-                            text-align: center;
-                            font-family: Frank Ruhl Libre, sans-serif;
-                            font-size: 14px;
-                            font-weight: 700;
+                            svg {
+                                font-size: 18px;
+                            }
                         }
 
-                        svg {
-                            cursor: pointer;
-                            font-size: 20px;
-                        }
-                    }
+                        &--game2 {
+                            h3 {
+                                margin-right: 170px;
+                                font-size: 12px;
+                            }
 
-                    &--game5 {
-                        display: flex;
-                        justify-content: flex-start;
-                        margin-left: 10px;
-
-                        h3 {
-                            margin-right: 128px;
-                            color: var(--h-1, #004A60);
-                            text-align: center;
-                            font-family: Frank Ruhl Libre, sans-serif;
-                            font-size: 14px;
-                            font-weight: 700;
+                            svg {
+                                font-size: 18px;
+                            }
                         }
 
-                        svg {
-                            cursor: pointer;
-                            font-size: 20px;
-                        }
-                    }
+                        &--game3 {
+                            h3 {
+                                margin-right: 195px;
+                                font-size: 12px;
+                            }
 
-                    &--game6 {
-                        display: flex;
-                        justify-content: flex-start;
-                        margin: 9px 0 0 10px;
-
-                        h3 {
-                            margin-right: 212px;
-                            color: var(--h-1, #004A60);
-                            text-align: center;
-                            font-family: Frank Ruhl Libre, sans-serif;
-                            font-size: 14px;
-                            font-weight: 700;
+                            svg {
+                                font-size: 18px;
+                            }
                         }
 
-                        svg {
-                            cursor: pointer;
-                            font-size: 20px;
+                        &--game4 {
+                            h3 {
+                                margin-right: 206px;
+                                font-size: 12px;
+                            }
+
+                            svg {
+                                font-size: 18px;
+                            }
+                        }
+
+                        &--game5 {
+                            h3 {
+                                margin-right: 140px;
+                                font-size: 12px;
+                            }
+
+                            svg {
+                                font-size: 18px;
+                            }
+                        }
+
+                        &--game6 {
+                            h3 {
+                                margin-right: 220px;
+                                font-size: 12px;
+                            }
+
+                            svg {
+                                font-size: 18px;
+                            }
                         }
                     }
                 }
             }
         }
-
     }
 }

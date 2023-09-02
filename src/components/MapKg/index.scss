@@ -13,13 +13,13 @@
                 font-family: Inter;
                 font-size: 18px;
                 font-weight: 400;
-                margin-left: 0;
+                margin-left: 72px;
             }
 
             &--search {
                 display: flex;
                 align-items: center;
-                margin: 40px 0 87px 0;
+                margin: 40px 0 87px 72px;
 
                 input {
                     display: inline-flex;
@@ -70,9 +70,11 @@
 
                 .yssyk {
                     position: relative;
+                    cursor: pointer;
 
                     img {
                         position: absolute;
+                        cursor: pointer;
                         right: 0;
                         top: 60px;
                         transition: filter .2s;
@@ -89,6 +91,7 @@
                 .chui {
                     img {
                         position: absolute;
+                        cursor: pointer;
                         top: 13px;
                         right: 332px;
 
@@ -101,6 +104,7 @@
                 .naryn {
                     img {
                         position: absolute;
+                        cursor: pointer;
                         right: 224px;
                         top: 130px;
 
@@ -113,6 +117,7 @@
                 .talas {
                     img {
                         position: absolute;
+                        cursor: pointer;
                         left: 246px;
                         top: 77px;
 
@@ -125,6 +130,7 @@
                 .jalal {
                     img {
                         position: absolute;
+                        cursor: pointer;
                         right: 602px;
                         top: 163px;
 
@@ -137,6 +143,7 @@
                 .osh {
                     img {
                         position: absolute;
+                        cursor: pointer;
                         left: 314px;
                         bottom: 1px;
                         rotate: 1deg;
@@ -148,15 +155,17 @@
                 }
 
                 .batken {
-                   img{
-                    position: absolute;
-                    left: 70px;
-                    bottom: 32px;
-                    &:hover {
-                        filter: brightness(0.7) contrast(1) saturate(0.2) sepia(2) hue-rotate(520deg);
+                    img {
+                        position: absolute;
+                        cursor: pointer;
+                        left: 70px;
+                        bottom: 32px;
+
+                        &:hover {
+                            filter: brightness(0.7) contrast(1) saturate(0.2) sepia(2) hue-rotate(520deg);
+                        }
                     }
-                   }
-                   
+
                 }
 
                 .blockY {
@@ -236,6 +245,7 @@
                     top: 30px;
                     right: 850px;
                     display: none;
+
                     h5 {
                         color: var(--bg-light-grey, #E5E4E9);
                         text-align: center;
@@ -258,6 +268,7 @@
                     top: 180px;
                     right: 750px;
                     display: none;
+
                     h5 {
                         color: var(--bg-light-grey, #E5E4E9);
                         text-align: center;
@@ -271,6 +282,7 @@
                     display: block;
 
                 }
+
                 .blockO {
                     display: flex;
                     align-items: center;
@@ -279,6 +291,7 @@
                     top: 350px;
                     right: 700px;
                     display: none;
+
                     h5 {
                         color: var(--bg-light-grey, #E5E4E9);
                         text-align: center;
@@ -301,6 +314,7 @@
                     top: 370px;
                     right: 900px;
                     display: none;
+
                     h5 {
                         color: var(--bg-light-grey, #E5E4E9);
                         text-align: center;

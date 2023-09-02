@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import bishkek from "../../img/bishkek.png";
 import manas from "../../img/manasordo.png";
 import burana from "../../img/burana.png";
@@ -6,10 +6,12 @@ import sulaiman from "../../img/sulaiman.png";
 import yssykkol from "../../img/yssykKol.png";
 import ochposot from "../../img/ochposOt.png";
 import ploshad from "../../img/ploshad.png";
+import hear from "../../img/hear.png";
 import { HiArrowNarrowRight } from "react-icons/hi";
-import { BsHeart } from "react-icons/bs";
+import { SlHeart } from "react-icons/sl";
 
 const Attractions = () => {
+  const [click, setClick] = useState(false);
   return (
     <div id="attracitons">
       <div className="container">
@@ -33,7 +35,7 @@ const Attractions = () => {
             <div className="attracitons--block2__boxs">
               <div className="attracitons--block2__boxs--card">
                 <img src={manas} alt="" />
-                  <h3>The Burana Tower</h3>
+                <h3>The Burana Tower</h3>
                 <div className="attracitons--block2__boxs--card__reiting">
                   <h4>4.5</h4>
                   <div className="attracitons--block2__boxs--card__reiting--krug"></div>
@@ -51,6 +53,11 @@ const Attractions = () => {
                   Kyrgyzstan.{" "}
                 </p>
                 <HiArrowNarrowRight />
+                <div className="attracitons--block2__boxs--card__icon">
+                  <img src={hear} alt=""onClick={()=> setClick(!click)} style={{
+                    color:click? "red": ""
+                  }}  />
+                </div>
               </div>
               <div className="attracitons--block2__boxs--card2">
                 <img src={burana} alt="" />
@@ -72,6 +79,9 @@ const Attractions = () => {
                   Kyrgyzstan.{" "}
                 </p>
                 <HiArrowNarrowRight />
+                <div className="attracitons--block2__boxs--card__icon">
+                  <img src={hear} alt="" />
+                </div>
               </div>
               <div className="attracitons--block2__boxs--card">
                 <img src={sulaiman} alt="" />
@@ -93,6 +103,9 @@ const Attractions = () => {
                   Kyrgyzstan.{" "}
                 </p>
                 <HiArrowNarrowRight />
+                <div className="attracitons--block2__boxs--card__icon">
+                  <img src={hear} alt="" />
+                </div>
               </div>
             </div>
             <div className="attracitons--block2__boxs">
@@ -116,6 +129,9 @@ const Attractions = () => {
                   Kyrgyzstan.{" "}
                 </p>
                 <HiArrowNarrowRight />
+                <div className="attracitons--block2__boxs--card__icon">
+                  <img src={hear} alt="" />
+                </div>
               </div>
               <div className="attracitons--block2__boxs--card2">
                 <img src={ochposot} alt="" />
@@ -137,6 +153,9 @@ const Attractions = () => {
                   Kyrgyzstan.{" "}
                 </p>
                 <HiArrowNarrowRight />
+                <div className="attracitons--block2__boxs--card__icon">
+                  <img src={hear} alt="" />
+                </div>
               </div>
               <div className="attracitons--block2__boxs--card">
                 <img src={ploshad} alt="" />
@@ -158,6 +177,9 @@ const Attractions = () => {
                   Kyrgyzstan.{" "}
                 </p>
                 <HiArrowNarrowRight />
+                <div className="attracitons--block2__boxs--card__icon">
+                  <img src={hear} alt="" />
+                </div>
               </div>
             </div>
             <h2>Culture</h2>

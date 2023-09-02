@@ -8,6 +8,7 @@ import HomeBlock from "../HomeBlock";
 import Attractions from "../Attractions";
 import HomeSlider from "../HomeSlider";
 import MapKg from "../MapKg";
+import {HiOutlineArrowRight} from "react-icons/hi"
 
 const Hero = () => {
   return (
@@ -23,6 +24,9 @@ const Hero = () => {
               <div className="hero--link__title--input">
                 <input type="text" placeholder="Where to go?" />
                 <RiSearch2Line className="hero--link__title--input__luk" />
+                <div className="hero--link__title--input__ic">
+                  <HiOutlineArrowRight/>
+                </div>
               </div>
               <p>
                 Are you ready to embark on an exciting journey through the

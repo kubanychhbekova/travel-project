@@ -10,20 +10,23 @@
   width: 100%;
   height: 100px;
   background: url("../../img/header.png") no-repeat center/cover;
- position: fixed;
-z-index: 5;
+  position: fixed;
+  z-index: 5;
+
   .header {
     display: flex;
     align-items: center;
 
-position: relative;
+    position: relative;
+
     &--center {
       display: flex;
       align-items: center;
       gap: 50px;
-position: absolute;
+      position: absolute;
       right: 385px;
       top: 33px;
+
       h4 {
         @include color;
         font-family: Frank Ruhl Libre;
@@ -51,10 +54,10 @@ position: absolute;
       backdrop-filter: blur(7.5px);
 
       padding: 16px 41px;
-     top: 100px;
+      top: 100px;
       left: 25%;
 
-      h2{
+      h2 {
         color: var(--h-1, #004A60);
         font-family: Frank Ruhl Libre;
         font-size: 20px;
@@ -69,9 +72,10 @@ position: absolute;
     &--right {
       display: inherit;
       gap: 31px;
-position: absolute;
+      position: absolute;
       right: 0;
       top: 27px;
+
       select {
         border-radius: 8px;
         @include border;
@@ -111,4 +115,40 @@ position: absolute;
 
     }
   }
+}
+
+
+@media (max-width: 1400px) {
+  #header {
+    width: 100%;
+    .header {
+      &--center {
+        right: 350px;
+      }
+      &--right{
+        // left: 800px;
+        right: 15px;
+      
+      &--modal{
+        left: 20%;
+      }
+    }
+  }
+}
+@media (max-width:1200px) {
+  #header{
+    width: 86.3%;
+    .header{
+      &--center{
+        // right: 200px;
+        h4{
+          font-size: 24px;
+        }
+      }
+      &--right{
+        right: 60px;
+      }
+    }
+  }
+}
 }
