@@ -26,10 +26,24 @@
     &--card{
       border-radius: 8px;
       background: #FFF;
-      padding: 40px 39px 0 39px;
+      padding: 40px 39px 60px 39px;
       width: 573px;
-      height: 651px;
       margin: 0;
+      .error{
+        width: 100%;
+        color: #ff0000;
+        white-space: pre-wrap;
+        p{
+          color: #ff0000;
+          font-family: Montserrat;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          text-align: start;
+          margin-top: -10px;
+        }
+      }
       h1{
         color: var(--h-1, #004A60);
         font-family: Frank Ruhl Libre;
@@ -161,7 +175,7 @@
         }
       }
     &__bottom{
-      button{
+      &--submit{
         @include btn;
       }
       p{

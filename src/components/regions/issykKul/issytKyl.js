@@ -57,8 +57,10 @@ const IssykKyl = () =>{
             <div className="container">
                 <div className="kul">
                     <div className="kul--first">
-                        <img src={img} alt=""/>
-                        <img src={temp} alt=""/>
+                      <div className="kul--first__img">
+                          <img src={img} alt=""/>
+                          <img src={temp} alt=""/>
+                      </div>
                         <div className="kul--first__title">
                             <h1>Issyk-Kul</h1>
                             <p>Issyk-Kul is an endorheic lake (i.e., without outflow) in the Northern Tian Shan
@@ -106,7 +108,7 @@ const IssykKyl = () =>{
                                         appeared: the Chinese “analog” is made a little differently.</p>
                                 </div>
                                 <div className="kul--third__bottom--center">
-                                    <img src={food} alt=""/>
+                                    <img src={food} alt="" className="img"/>
                                     <div className="kul--third__bottom--center__img">
                                         <img src={food} alt=""/>
                                         <img src={food2} alt=""/>
@@ -132,7 +134,7 @@ const IssykKyl = () =>{
                                         appeared: the Chinese “analog” is made a little differently.</p>
                                 </div>
                                 <div className="kul--third__bottom--center">
-                                    <img src={food} alt=""/>
+                                    <img src={food} alt="" className="img"/>
                                     <div className="kul--third__bottom--center__img">
                                         <img src={food} alt=""/>
                                         <img src={food2} alt=""/>
@@ -158,7 +160,7 @@ const IssykKyl = () =>{
                                         appeared: the Chinese “analog” is made a little differently.</p>
                                 </div>
                                 <div className="kul--third__bottom--center">
-                                    <img src={food} alt=""/>
+                                    <img src={food} alt="" className="img"/>
                                     <div className="kul--third__bottom--center__img">
                                         <img src={food} alt=""/>
                                         <img src={food2} alt=""/>
