@@ -1,7 +1,9 @@
 @import "slick-carousel/slick/slick.scss";
 @import "slick-carousel/slick/slick-theme.scss";
 @import "components/header/style";
+@import "components/header/media";
 @import "components/footer/style";
+@import "components/footer/media";
 @import "./components/Culture/index.scss";
 @import "./components/GamesPage/index.scss";
 @import "./components/NationalPage/index.scss";
@@ -13,13 +15,17 @@
 @import "components/register/login/style";
 @import "components/register/forgot/style";
 @import "components/register/digit/style";
-@import "components/register/style";
+@import "components/account/profile/style";
+@import "components/account/review/style";
+@import "components/account/favorite/style";
 @import "components/account/style";
 @import "./components/gallery/gallery";
 @import "../src/components/Hero/index.scss";
 @import "components/regions/issykKul/style";
+@import "components/regions/issykKul/media";
 @import "components/regions/popular/style";
 @import "components/regions/issykKul/cholponAta/style";
+@import "components/regions/issykKul/cholponAta/media";
 @import "components/regions/issykKul/cholponAta/choose/style/style";
 @import "components/regions/issykKul/cholponAta/choose/style/hotel";
 @import "./components/routes/routes.scss";
@@ -44,5 +50,10 @@
   width: 80%;
   a {
     text-decoration: none;
+  }
+}
+@media (max-width: 768px) {
+  .container{
+    width: 90%;
   }
 }

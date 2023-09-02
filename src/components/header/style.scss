@@ -12,6 +12,7 @@
   background: url("../../img/header.png") no-repeat center/cover;
   position: fixed;
   z-index: 5;
+  //display: none;
 
   .header {
     display: flex;
@@ -92,6 +93,31 @@
       }
 
       &__log {
+        &--img {
+          cursor: pointer;
+        div{
+          background: linear-gradient(to bottom, #87cefa, #007bff);
+          border-radius: 50%;
+          width: 47px;
+          height: 47px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          p {
+            font-size: 24px;
+            font-weight: 500;
+            color: white;
+            font-family: Roboto;
+          }
+        }
+          img {
+            border-radius: 50%;
+            width: 47px;
+            height: 47px;
+          }
+        }
+
         button {
           border-radius: 8px;
           background: var(--h-1, #004A60);
