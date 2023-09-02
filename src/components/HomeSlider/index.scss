@@ -1,51 +1,46 @@
 #homeSlider {
-    background: url("../../img/cultureblur.png") no-repeat center/cover;
+    background: url("../../img/Rectangle\ 19399.png") no-repeat center/cover;
     min-height: 100vh;
     // background: rgba(255, 255, 255, 0.60);
-    backdrop-filter: blur(7.5px);
+    backdrop-filter: blur(35px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     .container {
         .homeSlider {
             position: relative;
-            display: flex;
-            align-items: center;
-            // width: 100%;
+            margin-left: 70px;
 
-
-            &--block {
-                display: flex !important;
+            .pagination {
+                display: flex;
                 align-items: center;
-                margin: 0 100px !important;
-                margin-left: 70px;
+                margin: 38px 130px 0 0;
+                position: relative;
+            }
 
-                .slick-dots {
-                    position: absolute;
-                    bottom: -55px;
-                    right: 355px;
-                    display: block;
-                    width: 100%;
-                    padding: 0;
-                    margin: 0;
-                    list-style: none;
-                    text-align: center;
-                }
-
+            &--item {
+                display: flex;
+                align-items: start;
 
                 img {
-                    margin: 103px 19px 0 -550px;
+                    margin-right: 19px;
                 }
 
-                &__card {
-                    margin-top: 103px;
+                &__text {
                     width: 373px;
                     height: 546px;
                     border-radius: 5px;
-                    background: #FFF;
                     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+                    background: #FFF;
+                    display: flex;
+                    align-items: start;
+                    flex-direction: column;
+                    position: relative;
 
-                    h1 {
-                        color: var(--h-1, #004A60);
-                        font-family: Abril Fatface, sans-serif;
+                    h2 {
+                        color: var(--H1, #004A60);
+                        font-family: Abril Fatface;
                         font-size: 24px;
                         font-weight: 400;
                         letter-spacing: 1.2px;
@@ -53,6 +48,7 @@
                     }
 
                     p {
+                        margin-bottom: 150px;
                         width: 327px;
                         color: #242424;
                         font-family: Frank Ruhl Libre;
@@ -61,222 +57,70 @@
                         letter-spacing: 0.8px;
                     }
 
-                    &--btn {
-                        display: flex;
-                        width: 150px;
-                        height: 45px;
+                    &--block {
+                        position: absolute;
+                        top: 467;
+                        left: 197px;
+                        bottom: 21px;
+                        // margin-bottom: 80px;
+                        display: inline-flex;
+                        padding: 11px 30px;
                         justify-content: center;
                         align-items: center;
+                        gap: 10px;
                         border-radius: 8px;
-                        background: var(--dark-green, #3C5F63);
-                        margin: 100px 23px 23px 197px;
-                        margin-bottom: 0;
+                        background: var(--Dark-green, #3C5F63);
+                        // margin: 220px 23px 31px 197px;
+                        cursor: pointer;
 
-                        h2 {
-                            color: var(--bg-light-grey, #E5E4E9);
-                            font-family: Montserrat;
+                        h3 {
+                            color: var(--BG-light-grey, #E5E4E9);
                             text-align: center;
-                            font-weight: 500;
+                            font-family: Montserrat;
                             font-size: 20px;
+                            font-weight: 500;
                         }
 
                         svg {
-                            font-size: 30px;
                             color: white;
+                            font-size: 26px;
                         }
                     }
-
                 }
             }
 
-            &--block2 {
-                display: flex !important;
-                align-items: center;
-                margin: 0 100px !important;
+            &--pagination {
+                margin-top: 38px;
+                text-align: center;
 
-                img {
-                    margin: 103px 19px 0 -550px;
+                .active {
+                    width: 38px;
+                    height: 38px;
+                    background: var(--Dark-green, #3C5F63);
+                    border: none;
+                    border-radius: 50%;
+
                 }
 
-                &__card2 {
-                    margin-top: 103px;
-                    width: 373px;
-                    height: 546px;
-                    border-radius: 5px;
-                    background: #FFF;
-                    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+                button {
+                    margin: 0 10px;
+                    background: transparent;
+                    border: none;
+                    color: var(--BG-light-grey, #E5E4E9);
+                    font-family: Montserrat;
+                    font-size: 20px;
+                    font-weight: 400;
+                }
 
-                    h1 {
-                        color: var(--h-1, #004A60);
-                        font-family: Abril Fatface, sans-serif;
-                        font-size: 24px;
-                        font-weight: 400;
-                        letter-spacing: 1.2px;
-                        margin: 25px 0 32px 23px;
-                    }
-
-                    p {
-                        width: 327px;
-                        color: #242424;
-                        font-family: Frank Ruhl Libre;
-                        font-size: 16px;
-                        font-weight: 400;
-                        letter-spacing: 0.8px;
-                    }
-
-                    &--btn2 {
-                        display: flex;
-                        width: 150px;
-                        height: 45px;
-                        justify-content: center;
-                        align-items: center;
-                        border-radius: 8px;
-                        background: var(--dark-green, #3C5F63);
-                        margin: 30px 23px 23px 197px;
-
-                        h2 {
-                            color: var(--bg-light-grey, #E5E4E9);
-                            font-family: Montserrat;
-                            text-align: center;
-                            font-weight: 500;
-                            font-size: 20px;
-                        }
-
-                        svg {
-                            font-size: 30px;
-                            color: white;
-                        }
-                    }
-
+                &__btn1 {
+                    background: transparent;
+                    border: none;
+                    color: white;
+                    font-size: 30px;
                 }
 
             }
 
-            &--block3 {
-                display: flex !important;
-                align-items: center;
-                margin: 0 100px !important;
-
-                img {
-                    margin: 103px 19px 0 -550px;
-                }
-
-                &__card3 {
-                    margin-top: 103px;
-                    width: 373px;
-                    height: 546px;
-                    border-radius: 5px;
-                    background: #FFF;
-                    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
-
-                    h1 {
-                        color: var(--h-1, #004A60);
-                        font-family: Abril Fatface, sans-serif;
-                        font-size: 24px;
-                        font-weight: 400;
-                        letter-spacing: 1.2px;
-                        margin: 25px 0 32px 23px;
-                    }
-
-                    p {
-                        width: 327px;
-                        color: #242424;
-                        font-family: Frank Ruhl Libre;
-                        font-size: 16px;
-                        font-weight: 400;
-                        letter-spacing: 0.8px;
-                    }
-
-                    &--btn3 {
-                        display: flex;
-                        width: 150px;
-                        height: 45px;
-                        justify-content: center;
-                        align-items: center;
-                        border-radius: 8px;
-                        background: var(--dark-green, #3C5F63);
-                        margin: 178px 23px 23px 197px;
-
-                        h2 {
-                            color: var(--bg-light-grey, #E5E4E9);
-                            font-family: Montserrat;
-                            text-align: center;
-                            font-weight: 500;
-                            font-size: 20px;
-                        }
-
-                        svg {
-                            font-size: 30px;
-                            color: white;
-                        }
-                    }
-
-                }
-
-            }
-
-            &--block4 {
-                display: flex !important;
-                align-items: center;
-                margin: 0 100px !important;
-
-                img {
-                    margin: 103px 19px 0 -550px;
-                }
-
-                &__card4 {
-                    margin-top: 103px;
-                    width: 373px;
-                    height: 546px;
-                    border-radius: 5px;
-                    background: #FFF;
-                    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
-
-                    h1 {
-                        color: var(--h-1, #004A60);
-                        font-family: Abril Fatface, sans-serif;
-                        font-size: 24px;
-                        font-weight: 400;
-                        letter-spacing: 1.2px;
-                        margin: 25px 0 32px 23px;
-                    }
-
-                    p {
-                        width: 327px;
-                        color: #242424;
-                        font-family: Frank Ruhl Libre;
-                        font-size: 16px;
-                        font-weight: 400;
-                        letter-spacing: 0.8px;
-                    }
-
-                    &--btn4 {
-                        display: flex;
-                        width: 150px;
-                        height: 45px;
-                        justify-content: center;
-                        align-items: center;
-                        border-radius: 8px;
-                        background: var(--dark-green, #3C5F63);
-                        margin: 175px 23px 23px 197px;
-
-                        h2 {
-                            color: var(--bg-light-grey, #E5E4E9);
-                            font-family: Montserrat;
-                            text-align: center;
-                            font-weight: 500;
-                            font-size: 20px;
-                        }
-
-                        svg {
-                            font-size: 30px;
-                            color: white;
-                        }
-                    }
-
-                }
-
-            }
         }
     }
 }

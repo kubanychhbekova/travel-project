@@ -68,14 +68,14 @@
                         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
 
 
-                            h3 {
-                                color: var(--h-2, #242424);
-                                text-align: center;
-                                font-family: Montserrat, sans-serif;
-                                font-size: 14px;
-                                font-weight: 700;
-                                margin: 15px 0 5px 21px;
-                            }
+                        h3 {
+                            color: var(--h-2, #242424);
+                            text-align: center;
+                            font-family: Montserrat, sans-serif;
+                            font-size: 14px;
+                            font-weight: 700;
+                            margin: 15px 0 5px 21px;
+                        }
 
                         &__reiting {
                             display: flex;
@@ -92,14 +92,6 @@
                                 /* 22.4px */
                             }
 
-                            &--icon {
-                                background: #004A60;
-                                width: 39px;
-                                height: 39px;
-
-                                border-radius: 50%;
-                                margin: -250px 0 0 80px;
-                            }
 
 
                             &--krug {
@@ -144,6 +136,42 @@
                         svg {
                             font-size: 17px;
                             margin: 7px 0 0 300px;
+                            cursor: pointer;
+                        }
+
+                        &__icon {
+                            margin: -430px 13px 0 290px;
+                            // display: flex;
+                            // align-items: center;
+//                             // justify-content: center;
+//                             width: 39px;
+//                             height: 39px;
+//                             background-color: red;
+//                             position: relative;
+//                             transform: rotate(45deg);
+//                             border-radius: 50%;
+//                             &__icon::before,
+//                             &__icon::after {
+//   content: "";
+//   position: absolute;
+//   width: 100px;
+//   height: 100px;
+//   background-color: red;
+//   border-radius: 100px;
+//                                }
+//                                &__icon::before {
+//                                 top: -50px;
+//                                 left: 0;
+//                               }
+                              
+//                               &__icon::after {
+//                                 top: 0;
+//                                 left: 50px;
+//                               }
+
+                            // svg {
+                            //     margin: 10px 10px;
+                            // }
                         }
                     }
 
@@ -211,10 +239,12 @@
                             font-weight: 400;
                             line-height: normal;
                         }
+                        
 
                         svg {
                             font-size: 17px;
                             margin: 7px 0 0 300px;
+                            cursor: pointer;
                         }
                     }
                 }

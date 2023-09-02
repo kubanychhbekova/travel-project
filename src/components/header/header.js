@@ -61,6 +61,7 @@ const changeAuth=()=>{
             <div className="container">
                 <div className="header">
                     <div className="header--logo">
+                        {/* <h1>Logo</h1> */}
                     </div>
                     <div className="header--center">
                         <NavLink to={"/"}><h4>Home</h4></NavLink>

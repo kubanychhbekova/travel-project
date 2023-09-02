@@ -142,3 +142,39 @@
     }
   }
 }
+
+
+@media (max-width: 1400px) {
+  #header {
+    width: 100%;
+    .header {
+      &--center {
+        right: 350px;
+      }
+      &--right{
+        // left: 800px;
+        right: 15px;
+      
+      &--modal{
+        left: 20%;
+      }
+    }
+  }
+}
+@media (max-width:1200px) {
+  #header{
+    width: 86.3%;
+    .header{
+      &--center{
+        // right: 200px;
+        h4{
+          font-size: 24px;
+        }
+      }
+      &--right{
+        right: 60px;
+      }
+    }
+  }
+}
+}

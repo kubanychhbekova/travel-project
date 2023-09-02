@@ -17,7 +17,7 @@
             margin-top: 160px;
 
             h1 {
-              width: 916px;
+              // width: 916px;
               color: #fff;
               text-align: center;
               font-family: Abril Fatface, sans-serif;
@@ -40,21 +40,25 @@
             }
 
             &--input {
-              margin: 70px 0 32px 250px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin: 70px 0 32px 240px;
               position: relative;
 
               svg {
-                margin-left: 5px;
+                margin: 5px 5px 5px 5px;
               }
 
               input {
-                padding: 11px 455px 13px 52px;
+                padding: 11px 400px 13px 52px;
                 align-items: center;
                 border-radius: 30px;
                 background: var(--bg-light-grey, #e5e4e9);
                 outline: none;
                 border: none;
                 font-size: 20px;
+                margin-right: 18px;
 
               }
 
@@ -79,6 +83,25 @@
                 width: 24px;
                 height: 24px;
               }
+
+              &__ic {
+                background: #004A60;
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                margin-right: 70px;
+
+                svg {
+                  color: white;
+                  transform: rotate(-30deg);
+                  // margin-left: 10px;
+                  font-size: 35px;
+                }
+              }
             }
           }
 
@@ -97,3 +120,34 @@
       }
     }
   }
+
+  
+
+
+  /* Стили для экранов шириной от 1200px и выше */
+@media (max-width:1400px) {
+  #hero{
+    .container{left
+      .hero{
+        &--link{
+          &__title{
+            h1{
+              // text-align: center;
+              font-size: 70px;
+              margin-left: 700px;
+            }
+            p{
+              margin-left: 138px;
+            }
+            &--input{
+              margin: 70px 0 32px 197px;
+            }
+          }
+          &__icons{
+            margin-right: 220px;
+          }
+        }
+      }
+    }
+  }
+}
