@@ -19,7 +19,7 @@ const Profile = () => {
     const [modal, setModal] = useState(false)
     const [tokenE, setTokenE] = useState("")
     const [tokenP, setTokenP] = useState("")
-
+    console.log("hello")
     const changeData = async (accessToken) => {
         try {
             const upDateData = {

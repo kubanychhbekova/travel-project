@@ -11,7 +11,7 @@ const Header = () => {
     const [data,setData]=useState({})
     const {isAuth,user,firstLetter,hasImage,saveImage} = useSelector(s => s.user)
     const navigate = useNavigate()
-    const dispatch=useDispatch()
+
     useEffect(() => {
         const handleOutsideClick = (event) => {
             if (modalRef.current && !modalRef.current.contains(event.target)) {

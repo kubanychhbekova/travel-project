@@ -31,7 +31,7 @@ const SignUp = () => {
         phone_number: tel,
         date_of_birth: birthDay
     };
-
+    console.log("hello")
     useEffect(() => {
         setDisable(!email || !password || !name || !lastName || !tel || !birthDay || !confirm);
     }, [email, password, name, lastName, tel, birthDay, confirm])

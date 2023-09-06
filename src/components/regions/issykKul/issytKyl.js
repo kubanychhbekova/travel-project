@@ -54,6 +54,7 @@ const IssykKyl = () =>{
     };
     const [data,setData]=useState({})
     const {id} =useParams()
+    console.log("hello")
     const navigate=useNavigate()
     const getPlaces=async ()=>{
         try{

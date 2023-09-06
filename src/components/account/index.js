@@ -60,6 +60,7 @@ await axios.delete(`http://34.207.195.167/api/v1/accounts/users/${user.id}/`,{
             console.error('Ошибка при выполнении запроса:', error);
         }
     }
+    console.log("hello")
     return (
         <div id="account">
        <div className="container">
