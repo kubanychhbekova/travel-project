@@ -5,7 +5,7 @@
   height: 60px;
   color: #FFF;
   text-align: center;
-  font-family: Frank Ruhl Libre;
+  font-family: Frank Ruhl Libre sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -19,8 +19,8 @@
 .profile {
   &--top {
     background: url("../../../img/profile.png") no-repeat center/cover;
-    width: 955px;
-    height: 199px;
+    width: 1048px;
+    height: 231px;
     margin: 0;
     border-radius: 8px;
     border: 1px solid rgba(0, 74, 96, 1);
@@ -45,7 +45,7 @@
     }
 
     &__user {
-      margin: 60px 0 0 8px;
+      margin: 93px 0 0 8px;
       display: flex;
       align-items: end;
       gap: 10px;

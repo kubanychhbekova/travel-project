@@ -14,7 +14,10 @@ const RegisterSlice = createSlice({
     initialState,
     reducers: {
         getUser(state, action) {
+            let user = JSON.parse(localStorage.getItem("user")) || {}
             state.user = action.payload
+            user = action.payload
+            localStorage.setItem("user", JSON.stringify(user))
         },
         updateUser(state, action) {
             state.user = action.payload
@@ -26,18 +29,14 @@ const RegisterSlice = createSlice({
             auth = action.payload
             localStorage.setItem("isAuth", JSON.stringify(auth))
         },
-        firstAuth(state, action) {
-            state.isAuth = action.payload
-            localStorage.setItem("isAuth", JSON.stringify(action.payload))
-        },
-        logoutUser(state,action){
-           state.user={}
+        logoutUser(state, action) {
+            state.user = {}
             localStorage.removeItem("user")
         },
         getLetter(state, action) {
-            let letter=  JSON.parse(localStorage.getItem("firstLetter")) || null
+            let letter = JSON.parse(localStorage.getItem("firstLetter")) || null
             state.firstLetter = action.payload
-            letter=action.payload
+            letter = action.payload
 
             localStorage.setItem("firstLetter", JSON.stringify(letter))
         },
@@ -50,8 +49,19 @@ const RegisterSlice = createSlice({
             state.hasImage = action.payload
         },
 
+        handlechange(state, action){
 
+        }
     }
 })
-export const {getUser, IsAuth, getLetter, handleImage, handleHasImage, updateUser,logoutUser, firstAuth} = RegisterSlice.actions;
+export const {
+    getUser,
+    IsAuth,
+    getLetter,
+    handleImage,
+    handleHasImage,
+    updateUser,
+    logoutUser,
+    firstAuth
+} = RegisterSlice.actions;
 export default RegisterSlice.reducer

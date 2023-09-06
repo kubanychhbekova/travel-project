@@ -11,7 +11,7 @@ const Header = () => {
     const [data,setData]=useState({})
     const {isAuth,user,firstLetter,hasImage,saveImage} = useSelector(s => s.user)
     const navigate = useNavigate()
-    const dispatch=useDispatch()
+
     useEffect(() => {
         const handleOutsideClick = (event) => {
             if (modalRef.current && !modalRef.current.contains(event.target)) {
@@ -25,37 +25,22 @@ const Header = () => {
         };
     }, []);
     const getUser = async () => {
-        try{
-            const res = await axios.get(  `http://34.207.195.167/api/v1/accounts/users/${user.id}/`)
-            setData(res.data)
-        }catch (error){
-            console.error("Ошибка при выполнении запроса:", error);
+       if(isAuth){
+           try{
+               const res = await axios.get(  `http://34.207.195.167/api/v1/accounts/users/${user.id}/`)
+               setData(res.data)
+           }catch (error){
+               console.error("Ошибка при выполнении запроса:", error);
 
-        }
+           }
+       }
     }
 
 useEffect(()=>{
-   if(isAuth){
        getUser()
-   }
+
 },[])
-const changeAuth=()=>{
 
-        dispatch(firstAuth(user.length !==0))
-}
-
-    useEffect(()=>{
-        changeAuth()
-    },[])
-    const handleGetLetter=()=>{
-        if(isAuth){
-            const letter=user.username.split("")[0].toUpperCase()
-            dispatch(getLetter(letter))
-        }
-    }
-    useEffect(()=>{
-        handleGetLetter()
-    },[])
     return (
         <div id="header">
             <div className="container">
@@ -81,14 +66,21 @@ const changeAuth=()=>{
                          style={{
                              display: modal ? "block" : "none"
                          }}>
-                        <h2>Chui</h2>
-                        <h2>Talas</h2>
-                        <NavLink to={"/issykKul"}>
+
+                        <NavLink to={`/regions/${7}`}>
+                            <h2>Chui</h2></NavLink>
+                        <NavLink to={`/regions/${4}`}>
+                            <h2 >Talas</h2></NavLink>
+                        <NavLink to={`/regions/${1}`}>
                             <h2>Issyk-Kul</h2></NavLink>
-                        <h2>Naryn</h2>
-                        <h2>Jalal-Abad</h2>
-                        <h2>Osh</h2>
-                        <h2>Batken</h2>
+                        <NavLink to={`/regions/${6}`}>
+                            <h2>Naryn</h2></NavLink>
+                        <NavLink to={`/regions/${3}`}>
+                            <h2 >Jalal-Abad</h2></NavLink>
+                        <NavLink to={`/regions/${2}`}>
+                            <h2>Osh</h2></NavLink>
+                        <NavLink to={`/regions/${5}`}>
+                            <h2>Batken</h2></NavLink>
                     </div>
                     <div className="header--right">
                         <select name="language" id="">

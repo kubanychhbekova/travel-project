@@ -16,14 +16,14 @@ const Profile = () => {
     const [passwords, setPasswords] = useState("")
     const [tel, setTel] = useState(user.phone_number)
     const dispatch = useDispatch()
-    const [modal,setModal]=useState(false)
-    const[tokenE,setTokenE]=useState("")
-    const[tokenP,setTokenP]=useState("")
-
+    const [modal, setModal] = useState(false)
+    const [tokenE, setTokenE] = useState("")
+    const [tokenP, setTokenP] = useState("")
+    console.log("hello")
     const changeData = async (accessToken) => {
         try {
             const upDateData = {
-                "id":user.id,
+                "id": user.id,
                 "first_name": name,
                 "last_name": lastName,
                 "email": emails,
@@ -31,13 +31,14 @@ const Profile = () => {
                 "password": passwords,
                 "phone_number": tel,
                 "date_of_birth": birthDay
+
             }
             const response = await axios.patch(`http://34.207.195.167/api/v1/accounts/users/${user.id}/`,
                 upDateData, {
                     headers: {
                         "Content-Type": "application/json",
                         'Authorization': `Bearer ${accessToken}`
-        }
+                    }
                 })
             dispatch(updateUser(upDateData))
             console.log("Данные успешно обновлены:", response.data);
@@ -48,19 +49,20 @@ const Profile = () => {
         }
 
     }
-const getToken= async ()=>{
-      try{
-          const res=await axios.post("http://34.207.195.167/api/v1/token/api/token/",{
-              email:tokenE,
-              password:tokenP
-          })
-          const accessToken = res.data.access;
-          const refreshToken = res.data.refresh;
-          changeData(accessToken)
-          console.log("token",res.data)
-      }catch (error){
-          console.error('Ошибка при выполнении запроса:', error);      }
-}
+    const getToken = async () => {
+        try {
+            const res = await axios.post("http://34.207.195.167/api/v1/token/api/token/", {
+                email: tokenE,
+                password: tokenP
+            })
+            const accessToken = res.data.access;
+            const refreshToken = res.data.refresh;
+            changeData(accessToken)
+            console.log("token", res.data)
+        } catch (error) {
+            console.error('Ошибка при выполнении запроса:', error);
+        }
+    }
     const handleHasImg = () => {
         if (isAuth) {
             const hasImage = !!saveImage
@@ -68,20 +70,20 @@ const getToken= async ()=>{
         }
     }
     const getUser = async () => {
-        try{
-            const res = await axios.get(  `http://34.207.195.167/api/v1/accounts/users/${user.id}/`)
+        try {
+            const res = await axios.get(`http://34.207.195.167/api/v1/accounts/users/${user.id}/`)
             setData(res.data)
-        }catch (error){
+        } catch (error) {
             console.error("Ошибка при выполнении запроса:", error);
 
         }
     }
 
-    useEffect(()=>{
-        if(isAuth){
+    useEffect(() => {
+        if (isAuth) {
             getUser()
         }
-    },[])
+    }, [])
     useEffect(() => {
         const storedImage = localStorage.getItem('saveImage');
         if (storedImage) {
@@ -131,30 +133,32 @@ const getToken= async ()=>{
 
             </div>
             <div className="profile--modal" style={{
-                display:modal ? "block" :"none"
+                display: modal ? "block" : "none"
             }}>
                 <div className="profile--modal__div">
                     <h3>Do you want change your data?</h3>
                     <input type="email"
                            placeholder="Your email"
-                           onChange={(e)=>{
+                           onChange={(e) => {
                                setTokenE(e.target.value)
                            }}/>
                     <input type="text"
                            placeholder="Your email password"
-                           onChange={(e)=>{
+                           onChange={(e) => {
                                setTokenP(e.target.value)
                            }}
                     />
-                   <div className="profile--modal__div--btn">
-                       <button onClick={()=>{
-                           setModal(false)
-                       }}>no</button>
-                       <button onClick={()=>{
-                           getToken()
-                           setModal(false)
-                       }}>yes</button>
-                   </div>
+                    <div className="profile--modal__div--btn">
+                        <button onClick={() => {
+                            setModal(false)
+                        }}>no
+                        </button>
+                        <button onClick={() => {
+                            getToken()
+                            setModal(false)
+                        }}>yes
+                        </button>
+                    </div>
                 </div>
             </div>
             <div className="profile--card">
@@ -231,7 +235,7 @@ const getToken= async ()=>{
                         </div>
                     </div>
 
-                    <button onClick={()=>{
+                    <button onClick={() => {
                         setModal(!modal)
                     }}>Save changes
                     </button>

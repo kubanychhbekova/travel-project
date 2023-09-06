@@ -8,7 +8,6 @@ import {AiFillHeart} from "react-icons/ai";
 import Slider from "react-slick";
 
 const Popular = () => {
-    const navigate = useNavigate()
     const settings1 = {
         dots: true,
         infinite: false,
@@ -131,10 +130,7 @@ const Popular = () => {
                                         </div>
                                         <p>{el.review} reviews</p>
                                     </div>
-                                    <FaArrowRightLong className="popular--card__bottom--icon"
-                                                      onClick={() => {
-                                                          navigate("/issykKul/cholponAta")
-                                                      }}/>
+                                    <FaArrowRightLong className="popular--card__bottom--icon"/>
                                 </div>
                                 <div className="popular--card__icon"
                                >

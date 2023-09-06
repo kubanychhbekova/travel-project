@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import img from "../../../../img/cholpon.png";
 import temp from "../../../../img/temp.png";
 import {MdOutlineAttractions, MdOutlineKitchen, MdOutlineLocalHotel} from "react-icons/md";
@@ -9,15 +9,19 @@ import Hotels from "./choose/html/hotels";
 import Kitchen from "./choose/html/kitchen";
 import Event from "./choose/html/event";
 import Attraction from "./choose/html/attraction";
+import {useParams} from "react-router-dom";
+import axios from "axios";
 const CholponAta = () => {
     const [active,setActive]=useState(true)
     const [active1,setActive1]=useState(false)
     const [active2,setActive2]=useState(false)
     const [active3,setActive3]=useState(false)
     const [active4,setActive4]=useState(false)
+    const [data,setData]=useState({})
+    const [date,setDate]=useState({})
     const choose=()=>{
         if(active){
-            return <Places/>
+            return <Places map={data.boundary}/>
         }else if(active1){
             return <Hotels/>
         }else if(active2){
@@ -28,20 +32,39 @@ const CholponAta = () => {
             return <Attraction/>
         }
     }
+    const {name,id}=useParams()
+
+    const getPlaces=async ()=>{
+        try{
+            const res=await axios.get(`http://34.207.195.167/api/v1/places/region_detail/${id}/`)
+            setData(res.data.places.find(el=>el.name===name))
+        }catch(error){
+            console.error("your mistake")
+        }
+    }
+    const getData=async ()=>{
+        try{
+         const res=await axios.get(``)
+        }catch (error){
+            console.error("your mistake")
+        }
+    }
+
+    useEffect(()=>{
+        getPlaces()
+    },[name])
     return (
         <div id="cholpon">
             <div className="container">
                 <div className="cholpon">
                     <div className="cholpon--first">
-                        <img src={img} alt=""/>
-                        <img src={temp} alt=""/>
+                     <div className="cholpon--first__img">
+                         <img src={img} alt=""/>
+                         <img src={temp} alt=""/>
+                     </div>
                         <div className="cholpon--first__title">
-                            <h1>Cholpon-Ata </h1>
-                            <p>Cholpon-Ata is the most famous resort town on the shore of Lake Issyk-Kul. Once upon a
-                                time, caravans of the Great Silk Road passed through Cholpon-Ata. Today, tens of
-                                thousands of tourists from all over the CIS come to Cholpon-Ata. The city is famous for
-                                its clean sandy beaches and transparent lake.
-                                The best time to visit Cholpon-Ata is from mid–June to September. </p>
+                            <h1>{data.name}</h1>
+                            <p>{data.description}</p>
                         </div>
                     </div>
                     <div className="cholpon--second">
