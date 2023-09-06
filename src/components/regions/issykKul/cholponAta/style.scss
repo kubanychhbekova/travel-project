@@ -6,17 +6,20 @@
       justify-content: space-between;
       align-items: start;
       gap: 36px;
-      position: relative;
 
-img:nth-child(1){
-  margin-left: 0;
-  width: 605px;
+
+&__img{
+  position: relative;
+  img:nth-child(1){
+    margin-left: 0;
+    width: 605px;
+  }
+  img:nth-child(2) {
+    position: absolute;
+    bottom: 17px;
+    left: 25px;
+  }
 }
-      img:nth-child(2) {
-        position: absolute;
-        bottom: 17px;
-        left: 25px;
-      }
 
       &__title {
         margin-left: 0;

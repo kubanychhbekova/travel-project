@@ -14,7 +14,10 @@ const RegisterSlice = createSlice({
     initialState,
     reducers: {
         getUser(state, action) {
+            let user= JSON.parse(localStorage.getItem("user")) || {}
             state.user = action.payload
+            user=action.payload
+            localStorage.setItem("user",JSON.stringify(user))
         },
         updateUser(state, action) {
             state.user = action.payload
@@ -25,10 +28,6 @@ const RegisterSlice = createSlice({
             state.isAuth = action.payload
             auth = action.payload
             localStorage.setItem("isAuth", JSON.stringify(auth))
-        },
-        firstAuth(state, action) {
-            state.isAuth = action.payload
-            localStorage.setItem("isAuth", JSON.stringify(action.payload))
         },
         logoutUser(state,action){
            state.user={}

@@ -21,7 +21,7 @@ const SignUp = () => {
         setDarkTheme(!darkTheme);
     };
     const dispatch = useDispatch()
-    const {user, isAuth,firstLetter} = useSelector(s => s.user)
+    const {user, isAuth, firstLetter} = useSelector(s => s.user)
     const requestData = {
         first_name: name,
         last_name: lastName,
@@ -37,7 +37,6 @@ const SignUp = () => {
     }, [email, password, name, lastName, tel, birthDay, confirm])
 
 
-
     const handleLogin = async () => {
         try {
             if (!email || !password) {
@@ -49,17 +48,16 @@ const SignUp = () => {
                 requestData
             );
             dispatch(getUser(response.data))
-            localStorage.setItem("user", JSON.stringify(response.data));
-            navigate("/");
-
+            dispatch(getLetter(requestData.first_name.split("")[0].toUpperCase()))
             dispatch(IsAuth(true))
-
+            navigate("/");
+            console.log(user,firstLetter)
         } catch (error) {
             console.error("Ошибка при выполнении запроса:", error);
         }
     };
 
-
+    console.log("requestData :", requestData)
     return (
         <div id="register">
             <div className="register">

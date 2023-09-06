@@ -8,11 +8,16 @@ import {useDispatch, useSelector} from "react-redux";
 import Review from "./review/review";
 import Favorite from "./favorite/favorite";
 import axios from "axios";
-import {deleteUser} from "../../store/registerSlice";
+import {deleteUser, handleImage, IsAuth, logoutUser} from "../../store/registerSlice";
 
 const Account = () => {
     const [pages, setPages] = useState("profile")
-    const {user,isAuth}=useSelector(s=>s.user)
+    const {user,isAuth,hasImage,saveImage,firstLetter}=useSelector(s=>s.user)
+    const [email,setEmail]=useState("")
+    const [password,setPassword]=useState("")
+    const [modal,setModal]=useState(false)
+    const dispatch=useDispatch()
+
  const changePage=()=>{
        if(isAuth){
            if(pages==="profile"){
@@ -24,7 +29,37 @@ const Account = () => {
            }
        }
  }
+const handleLogOut=async (access)=>{
+        try{
+await axios.delete(`http://34.207.195.167/api/v1/accounts/users/${user.id}/`,{
+    headers: {
+        "Content-Type": "application/json",
+        'Authorization': `Bearer ${access}`
+    }
+})
 
+            dispatch(logoutUser())
+            dispatch(IsAuth(false))
+            dispatch(handleImage(null))
+            console.log("you are do it")
+        } catch (error){
+            console.error("Ошибка при выполнении запроса:", error);
+
+        }
+}
+    const getToken = async () => {
+        try {
+            const res = await axios.post("http://34.207.195.167/api/v1/token/api/token/", {
+                email: email,
+                password: password
+            })
+            const accessToken = res.data.access;
+            const refreshToken = res.data.refresh;
+            handleLogOut(accessToken)
+        } catch (error) {
+            console.error('Ошибка при выполнении запроса:', error);
+        }
+    }
     return (
         <div id="account">
        <div className="container">
@@ -53,10 +88,30 @@ const Account = () => {
                            <p>Favorites</p>
                        </div>
                    </div>
-                   <div className="account--left__log" >
-                       <BiLogInCircle className="icon"/>
+                   <div className="account--left__log" onClick={()=>{
+                       setModal(true)
+                   }} >
+                       <BiLogInCircle className="icon" />
                        <p>Log out</p>
                    </div>
+               </div>
+               <div className="account--modal"
+               style={{
+                   display: modal? "block" : "none"
+               }}>
+                   <input type="text" onChange={(e)=>{
+                       setEmail(e.target.value)
+                   }}/>
+                   <input type="text"
+                          onChange={(e)=>{
+                              setPassword(e.target.value)
+                          }}/>
+                  <div className="account--modal__btn">
+                      <button onClick={()=>{
+                          setModal(false)
+                      }}>no</button>
+                      <button onClick={getToken}>yes</button>
+                  </div>
                </div>
                <div className="account--right">
                    <div className="account--right__header">
@@ -76,7 +131,11 @@ const Account = () => {
                                <p>Moscow, Rossia</p>
                            </div>
                            <div className="account--right__header--user__img">
-                          <div><p>A</p></div>
+                               {hasImage ? <img src={saveImage} alt=""/>
+                                   :
+                                   <div><p>{firstLetter}</p></div>
+
+                               }
 
                            </div>
                        </div>
@@ -86,6 +145,7 @@ const Account = () => {
                    }
                </div>
            </div>
+
        </div>
         </div>
     );

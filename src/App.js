@@ -30,8 +30,9 @@ function App() {
             <Routes>
                 <Route path={"/"} element={<Hero/>}/>
                 <Route path={"/culture"} element={<Culture/>}/>
-                <Route path={"/issykKul"} element={<IssytKyl/>}/>
-                <Route path={"/issykKul/cholponAta"} element={<CholponAta/>}/>
+                <Route path={"/regions/:id"} element={<IssytKyl/>}/>
+                <Route path={"/regions/:id/:name"} element={<CholponAta/>}/>
+
                 <Route path={'/routes'} element={<Routs/>}/>
                 {/* <Route path="/games" element={<GamesPage/>}/> */}
                 <Route path="/national" element={<NationalPage/>}/>

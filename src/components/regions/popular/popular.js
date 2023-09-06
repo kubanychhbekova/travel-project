@@ -131,10 +131,7 @@ const Popular = () => {
                                         </div>
                                         <p>{el.review} reviews</p>
                                     </div>
-                                    <FaArrowRightLong className="popular--card__bottom--icon"
-                                                      onClick={() => {
-                                                          navigate("/issykKul/cholponAta")
-                                                      }}/>
+                                    <FaArrowRightLong className="popular--card__bottom--icon"/>
                                 </div>
                                 <div className="popular--card__icon"
                                >
